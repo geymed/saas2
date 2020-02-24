@@ -1,0 +1,7 @@
+salto {
+  uid = "e7d23999-6587-4cd2-a89c-863971108877"
+  name = "saas2"
+  services = [
+      "salesforce",
+  ]
+}
