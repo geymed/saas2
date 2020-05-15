@@ -1,6 +1,0 @@
-salesforce.SharingRules ContactPointConsent {
-  fullName = "ContactPointConsent"
-  _parent = [
-      salesforce.ContactPointConsent,
-  ]
-}

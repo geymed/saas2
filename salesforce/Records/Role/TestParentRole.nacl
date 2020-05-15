@@ -1,9 +1,0 @@
-salesforce.Role TestParentRole {
-  fullName = "TestParentRole"
-  caseAccessLevel = "Edit"
-  contactAccessLevel = "Edit"
-  description = "TestParentRole"
-  mayForecastManagerShare = false
-  name = "TestParentRole"
-  opportunityAccessLevel = "Edit"
-}

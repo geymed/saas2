@@ -1,5 +1,0 @@
-salesforce.EmailFolder TestEmailFolder {
-  accessType = "Public"
-  name = "Test Email Folder Name"
-  fullName = "TestEmailFolder"
-}

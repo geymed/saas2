@@ -1,4 +1,0 @@
-salesforce.StandardValueSet AccountContactMultiRoles {
-  fullName = "AccountContactMultiRoles"
-  sorted = false
-}

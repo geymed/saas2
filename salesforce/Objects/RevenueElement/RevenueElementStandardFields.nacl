@@ -1,8 +1,0 @@
-type salesforce.RevenueElement {
-  string Description {
-  }
-  string RevenueEndDate {
-  }
-  string RevenueStartDate {
-  }
-}

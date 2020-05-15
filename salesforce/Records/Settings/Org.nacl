@@ -1,6 +1,0 @@
-salesforce.OrgSettings {
-  fullName = "Org"
-  enableExtendedMailMerge = false
-  enableManageSelfServiceUsers = false
-  saveMailMergeDocsAsSalesforceDocs = false
-}

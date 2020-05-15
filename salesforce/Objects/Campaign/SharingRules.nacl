@@ -1,6 +1,0 @@
-salesforce.SharingRules Campaign {
-  fullName = "Campaign"
-  _parent = [
-      salesforce.Campaign,
-  ]
-}

@@ -1,4 +1,0 @@
-salesforce.StandardValueSet WorkOrderPriority {
-  fullName = "WorkOrderPriority"
-  sorted = false
-}

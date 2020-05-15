@@ -1,4 +1,0 @@
-salesforce.PardotSettings {
-  fullName = "Pardot"
-  enablePardotAppV1Enabled = false
-}

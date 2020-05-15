@@ -1,4 +1,0 @@
-salesforce.StandardValueSet IdeaStatus {
-  fullName = "IdeaStatus"
-  sorted = false
-}

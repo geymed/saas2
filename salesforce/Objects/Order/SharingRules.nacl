@@ -1,6 +1,0 @@
-salesforce.SharingRules Order {
-  fullName = "Order"
-  _parent = [
-      salesforce.Order,
-  ]
-}

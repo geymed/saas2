@@ -1,5 +1,0 @@
-salesforce.MacroSettings {
-  fullName = "Macro"
-  enableAdvancedSearch = false
-  macrosInFolders = false
-}

@@ -1,6 +1,0 @@
-type salesforce.MapAndLocationSettings {
-  boolean enableAddressAutoComplete {
-  }
-  boolean enableMapsAndLocation {
-  }
-}

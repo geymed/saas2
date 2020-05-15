@@ -1,5 +1,0 @@
-salesforce.NotificationsSettings {
-  fullName = "Notifications"
-  enableMobileAppPushNotifications = true
-  enableNotifications = true
-}

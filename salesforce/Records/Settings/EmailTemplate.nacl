@@ -1,4 +1,0 @@
-salesforce.EmailTemplateSettings {
-  fullName = "EmailTemplate"
-  enableTemplateEnhancedFolderPref = false
-}

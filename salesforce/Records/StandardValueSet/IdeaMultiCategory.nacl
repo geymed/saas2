@@ -1,4 +1,0 @@
-salesforce.StandardValueSet IdeaMultiCategory {
-  fullName = "IdeaMultiCategory"
-  sorted = false
-}

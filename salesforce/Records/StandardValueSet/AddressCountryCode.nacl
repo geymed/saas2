@@ -1,4 +1,0 @@
-salesforce.StandardValueSet AddressCountryCode {
-  fullName = "AddressCountryCode"
-  sorted = false
-}

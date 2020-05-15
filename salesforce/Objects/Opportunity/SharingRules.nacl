@@ -1,6 +1,0 @@
-salesforce.SharingRules Opportunity {
-  fullName = "Opportunity"
-  _parent = [
-      salesforce.Opportunity,
-  ]
-}

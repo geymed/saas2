@@ -1,3 +1,0 @@
-salesforce.AutoResponseRules Lead {
-  fullName = "Lead"
-}

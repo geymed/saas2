@@ -1,9 +1,0 @@
-type salesforce.EngagementChannelType {
-  string ContactPointType {
-  }
-  string Name {
-  }
-  salesforce.Lookup OwnerId {
-    apiName = "EngagementChannelType.OwnerId"
-  }
-}

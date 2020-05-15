@@ -1,4 +1,0 @@
-type salesforce.IotSettings {
-  boolean enableIoT {
-  }
-}

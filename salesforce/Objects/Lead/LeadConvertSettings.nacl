@@ -1,8 +1,0 @@
-salesforce.LeadConvertSettings LeadConvertSettings {
-  fullName = "LeadConvertSettings"
-  allowOwnerChange = true
-  opportunityCreationOptions = "VisibleOptional"
-  _parent = [
-      salesforce.Lead,
-  ]
-}

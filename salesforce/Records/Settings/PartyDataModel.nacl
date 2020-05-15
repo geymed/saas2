@@ -1,4 +1,0 @@
-salesforce.PartyDataModelSettings {
-  fullName = "PartyDataModel"
-  enableAutoSelectIndividualOnMerge = false
-}
