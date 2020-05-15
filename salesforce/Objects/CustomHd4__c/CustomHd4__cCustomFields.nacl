@@ -1,0 +1,11 @@
+type salesforce.CustomHd4__c {
+  salesforce.Text Test__c {
+    apiName = "CustomHd4__c.Test__c"
+    label = "Test"
+    _required = false
+    unique = false
+    caseSensitive = false
+    length = 80
+    externalId = false
+  }
+}

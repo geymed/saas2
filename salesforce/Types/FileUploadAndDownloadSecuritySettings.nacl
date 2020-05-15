@@ -1,0 +1,16 @@
+settings salesforce.FileUploadAndDownloadSecuritySettings {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  serviceid fullName {
+    _required = false
+  }
+  "List<salesforce.FileTypeDispositionAssignmentBean>" dispositions {
+    _required = false
+  }
+  boolean noHtmlUploadAsAttachment {
+    _required = false
+  }
+  metadataType = "FileUploadAndDownloadSecuritySettings"
+}

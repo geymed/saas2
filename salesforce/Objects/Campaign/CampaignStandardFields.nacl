@@ -1,0 +1,228 @@
+type salesforce.Campaign {
+  salesforce.Text Id {
+    apiName = "Campaign.Id"
+    label = "Campaign ID"
+    _required = true
+    unique = false
+    caseSensitive = false
+    length = 18
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "Campaign.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+  }
+  salesforce.Name Name {
+    apiName = "Campaign.Name"
+    label = "Name"
+    _required = true
+  }
+  salesforce.Lookup ParentId {
+    apiName = "Campaign.ParentId"
+    label = "Parent Campaign ID"
+    _required = false
+    allowLookupRecordDeletion = true
+    referenceTo = [
+        "Campaign",
+    ]
+  }
+  salesforce.Picklist Type {
+    apiName = "Campaign.Type"
+    label = "Type"
+    _required = false
+    restricted = false
+    valueSetName = salesforce.StandardValueSet.instance.CampaignType
+  }
+  salesforce.Picklist Status {
+    apiName = "Campaign.Status"
+    label = "Status"
+    _required = false
+    restricted = false
+    valueSetName = salesforce.StandardValueSet.instance.CampaignStatus
+  }
+  salesforce.Date StartDate {
+    apiName = "Campaign.StartDate"
+    label = "Start Date"
+    _required = false
+  }
+  salesforce.Date EndDate {
+    apiName = "Campaign.EndDate"
+    label = "End Date"
+    _required = false
+  }
+  salesforce.Currency ExpectedRevenue {
+    apiName = "Campaign.ExpectedRevenue"
+    label = "Expected Revenue in Campaign"
+    _required = false
+    scale = 0
+    precision = 18
+  }
+  salesforce.Currency BudgetedCost {
+    apiName = "Campaign.BudgetedCost"
+    label = "Budgeted Cost in Campaign"
+    _required = false
+    scale = 0
+    precision = 18
+  }
+  salesforce.Currency ActualCost {
+    apiName = "Campaign.ActualCost"
+    label = "Actual Cost in Campaign"
+    _required = false
+    scale = 0
+    precision = 18
+  }
+  salesforce.Percent ExpectedResponse {
+    apiName = "Campaign.ExpectedResponse"
+    label = "Expected Response (%)"
+    _required = false
+    scale = 2
+    precision = 10
+  }
+  salesforce.Number NumberSent {
+    apiName = "Campaign.NumberSent"
+    label = "Num Sent in Campaign"
+    _required = false
+    precision = 18
+    scale = 0
+    unique = false
+  }
+  salesforce.Checkbox IsActive {
+    apiName = "Campaign.IsActive"
+    label = "Active"
+    defaultValue = false
+  }
+  salesforce.LongTextArea Description {
+    apiName = "Campaign.Description"
+    label = "Description"
+    _required = false
+    length = 32000
+  }
+  salesforce.Number NumberOfLeads {
+    apiName = "Campaign.NumberOfLeads"
+    label = "Leads in Campaign"
+    _required = true
+    precision = 9
+    scale = 0
+    unique = false
+  }
+  salesforce.Number NumberOfConvertedLeads {
+    apiName = "Campaign.NumberOfConvertedLeads"
+    label = "Converted Leads in Campaign"
+    _required = true
+    precision = 9
+    scale = 0
+    unique = false
+  }
+  salesforce.Number NumberOfContacts {
+    apiName = "Campaign.NumberOfContacts"
+    label = "Contacts in Campaign"
+    _required = true
+    precision = 9
+    scale = 0
+    unique = false
+  }
+  salesforce.Number NumberOfResponses {
+    apiName = "Campaign.NumberOfResponses"
+    label = "Responses in Campaign"
+    _required = true
+    precision = 9
+    scale = 0
+    unique = false
+  }
+  salesforce.Number NumberOfOpportunities {
+    apiName = "Campaign.NumberOfOpportunities"
+    label = "Opportunities in Campaign"
+    _required = true
+    precision = 9
+    scale = 0
+    unique = false
+  }
+  salesforce.Number NumberOfWonOpportunities {
+    apiName = "Campaign.NumberOfWonOpportunities"
+    label = "Won Opportunities in Campaign"
+    _required = true
+    precision = 9
+    scale = 0
+    unique = false
+  }
+  salesforce.Currency AmountAllOpportunities {
+    apiName = "Campaign.AmountAllOpportunities"
+    label = "Value Opportunities in Campaign"
+    _required = true
+    scale = 0
+    precision = 18
+  }
+  salesforce.Currency AmountWonOpportunities {
+    apiName = "Campaign.AmountWonOpportunities"
+    label = "Value Won Opportunities in Campaign"
+    _required = true
+    scale = 0
+    precision = 18
+  }
+  salesforce.Lookup OwnerId {
+    apiName = "Campaign.OwnerId"
+    label = "Owner ID"
+    _required = true
+    allowLookupRecordDeletion = true
+    referenceTo = [
+        "User",
+    ]
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "Campaign.CreatedDate"
+    label = "Created Date"
+    _required = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "Campaign.CreatedById"
+    label = "Created By ID"
+    _required = true
+    allowLookupRecordDeletion = true
+    referenceTo = [
+        "User",
+    ]
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "Campaign.LastModifiedDate"
+    label = "Last Modified Date"
+    _required = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "Campaign.LastModifiedById"
+    label = "Last Modified By ID"
+    _required = true
+    allowLookupRecordDeletion = true
+    referenceTo = [
+        "User",
+    ]
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "Campaign.SystemModstamp"
+    label = "System Modstamp"
+    _required = true
+  }
+  salesforce.Date LastActivityDate {
+    apiName = "Campaign.LastActivityDate"
+    label = "Last Activity"
+    _required = false
+  }
+  salesforce.DateTime LastViewedDate {
+    apiName = "Campaign.LastViewedDate"
+    label = "Last Viewed Date"
+    _required = false
+  }
+  salesforce.DateTime LastReferencedDate {
+    apiName = "Campaign.LastReferencedDate"
+    label = "Last Referenced Date"
+    _required = false
+  }
+  salesforce.Lookup CampaignMemberRecordTypeId {
+    apiName = "Campaign.CampaignMemberRecordTypeId"
+    label = "Record Type ID"
+    _required = false
+    allowLookupRecordDeletion = true
+    referenceTo = [
+        "RecordType",
+    ]
+  }
+}

@@ -1,0 +1,10 @@
+type salesforce.ContentAssetVersions {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  salesforce.ContentAssetVersion version {
+    _required = false
+  }
+  metadataType = "ContentAssetVersions"
+}

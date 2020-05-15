@@ -1,0 +1,12 @@
+settings salesforce.PicklistSettings {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  serviceid fullName {
+    _required = false
+  }
+  boolean isPicklistApiNameEditDisabled {
+  }
+  metadataType = "PicklistSettings"
+}

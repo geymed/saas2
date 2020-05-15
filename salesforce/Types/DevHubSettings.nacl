@@ -1,0 +1,14 @@
+settings salesforce.DevHubSettings {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  serviceid fullName {
+    _required = false
+  }
+  boolean enablePackaging2 {
+  }
+  boolean enableScratchOrgManagementPref {
+  }
+  metadataType = "DevHubSettings"
+}

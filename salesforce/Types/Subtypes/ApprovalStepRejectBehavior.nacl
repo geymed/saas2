@@ -1,0 +1,17 @@
+type salesforce.ApprovalStepRejectBehavior {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  string type {
+    _required = false
+    _restriction = {
+        enforce_value = false
+        values = [
+            "BackToPrevious",
+            "RejectRequest",
+        ]
+    }
+  }
+  metadataType = "ApprovalStepRejectBehavior"
+}

@@ -1,0 +1,30 @@
+type salesforce.LayoutSection {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  boolean customLabel {
+    _required = false
+  }
+  boolean detailHeading {
+    _required = false
+  }
+  boolean editHeading {
+    _required = false
+  }
+  string label {
+    _required = false
+  }
+  "List<salesforce.LayoutColumn>" layoutColumns {
+    _required = false
+  }
+  string style {
+    _values = [
+        "TwoColumnsTopToBottom",
+        "TwoColumnsLeftToRight",
+        "OneColumn",
+        "CustomLinks",
+    ]
+  }
+  metadataType = "LayoutSection"
+}

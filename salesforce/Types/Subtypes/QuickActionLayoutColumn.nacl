@@ -1,0 +1,10 @@
+type salesforce.QuickActionLayoutColumn {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  "List<salesforce.QuickActionLayoutItem>" quickActionLayoutItems {
+    _required = false
+  }
+  metadataType = "QuickActionLayoutColumn"
+}

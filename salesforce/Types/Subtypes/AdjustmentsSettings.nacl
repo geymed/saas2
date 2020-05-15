@@ -1,0 +1,13 @@
+type salesforce.AdjustmentsSettings {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  boolean enableAdjustments {
+    _required = false
+  }
+  boolean enableOwnerAdjustments {
+    _required = false
+  }
+  metadataType = "AdjustmentsSettings"
+}

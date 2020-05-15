@@ -1,0 +1,19 @@
+type salesforce.KnowledgeSuggestedArticlesSettings {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  string caseFields {
+    _required = false
+  }
+  boolean useSuggestedArticlesForCase {
+    _required = false
+  }
+  string workOrderFields {
+    _required = false
+  }
+  string workOrderLineItemFields {
+    _required = false
+  }
+  metadataType = "KnowledgeSuggestedArticlesSettings"
+}

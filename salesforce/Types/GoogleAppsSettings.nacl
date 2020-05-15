@@ -1,0 +1,13 @@
+settings salesforce.GoogleAppsSettings {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  serviceid fullName {
+    _required = false
+  }
+  string googleAppsDomain {
+    _required = false
+  }
+  metadataType = "GoogleAppsSettings"
+}

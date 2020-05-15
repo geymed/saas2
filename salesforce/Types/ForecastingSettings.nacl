@@ -1,0 +1,25 @@
+settings salesforce.ForecastingSettings {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  serviceid fullName {
+    _required = false
+  }
+  boolean defaultToPersonalCurrency {
+    _required = false
+  }
+  boolean enableForecasts {
+    _required = false
+  }
+  "List<salesforce.ForecastingCategoryMapping>" forecastingCategoryMappings {
+    _required = false
+  }
+  salesforce.ForecastingDisplayedFamilySettings forecastingDisplayedFamilySettings {
+    _required = false
+  }
+  "List<salesforce.ForecastingTypeSettings>" forecastingTypeSettings {
+    _required = false
+  }
+  metadataType = "ForecastingSettings"
+}

@@ -1,0 +1,18 @@
+settings salesforce.OrgSettings {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  serviceid fullName {
+    _required = false
+  }
+  boolean enableCustomerSuccessPortal {
+  }
+  boolean enableExtendedMailMerge {
+  }
+  boolean enableManageSelfServiceUsers {
+  }
+  boolean saveMailMergeDocsAsSalesforceDocs {
+  }
+  metadataType = "OrgSettings"
+}

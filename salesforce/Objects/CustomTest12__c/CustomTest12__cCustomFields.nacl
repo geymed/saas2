@@ -1,0 +1,14 @@
+type salesforce.CustomTest12__c {
+  salesforce.Picklist Test__c {
+    apiName = "CustomTest12__c.Test__c"
+    label = "Test"
+    _required = false
+    valueSet = {
+        fullName = "BLA"
+        default = false
+        label = "BLA"
+    }
+    restricted = false
+    sorted = false
+  }
+}

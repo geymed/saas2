@@ -1,0 +1,39 @@
+type salesforce.ProfileSessionSetting {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  serviceid fullName {
+    _required = false
+  }
+  boolean externalCommunityUserIdentityVerif {
+    _required = false
+  }
+  boolean forceLogout {
+    _required = false
+  }
+  string profile {
+    _required = false
+  }
+  string requiredSessionLevel {
+    _required = false
+    _restriction = {
+        enforce_value = false
+        values = [
+            "HIGH_ASSURANCE",
+            "LOW",
+            "STANDARD",
+        ]
+    }
+  }
+  boolean sessionPersistence {
+    _required = false
+  }
+  number sessionTimeout {
+    _required = false
+  }
+  boolean sessionTimeoutWarning {
+    _required = false
+  }
+  metadataType = "ProfileSessionSetting"
+}

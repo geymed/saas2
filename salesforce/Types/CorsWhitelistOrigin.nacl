@@ -1,0 +1,13 @@
+type salesforce.CorsWhitelistOrigin {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  serviceid fullName {
+    _required = false
+  }
+  string urlPattern {
+    _required = false
+  }
+  metadataType = "CorsWhitelistOrigin"
+}

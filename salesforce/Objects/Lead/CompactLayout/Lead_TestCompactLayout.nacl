@@ -1,0 +1,9 @@
+salesforce.CompactLayout Lead_TestCompactLayout {
+  fullName = "Lead.TestCompactLayout"
+  fields = [
+      "Address",
+      "Company",
+  ]
+  label = "E2E Fetch CompactLayout"
+  _parent = salesforce.Lead
+}

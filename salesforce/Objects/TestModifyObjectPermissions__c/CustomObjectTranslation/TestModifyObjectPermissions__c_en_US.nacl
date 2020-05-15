@@ -1,0 +1,17 @@
+salesforce.CustomObjectTranslation TestModifyObjectPermissions__c_en_US {
+  fullName = "TestModifyObjectPermissions__c-en_US"
+  caseValues = [
+      {
+        plural = false
+        value = "test label"
+      },
+      {
+        plural = true
+        value = "test labels"
+      },
+  ]
+  startsWith = "Consonant"
+  _parent = [
+      salesforce.TestModifyObjectPermissions__c,
+  ]
+}

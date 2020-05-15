@@ -1,0 +1,13 @@
+type salesforce.ContentAssetLink {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  boolean isManagingWorkspace {
+    _required = false
+  }
+  string name {
+    _required = false
+  }
+  metadataType = "ContentAssetLink"
+}

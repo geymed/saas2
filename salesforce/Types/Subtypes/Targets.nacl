@@ -1,0 +1,10 @@
+type salesforce.Targets {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  string target {
+    _required = false
+  }
+  metadataType = "Targets"
+}

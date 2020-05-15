@@ -1,0 +1,13 @@
+type salesforce.StrategyNodeSortField {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  string name {
+    _required = false
+  }
+  boolean nullsFirst {
+    _required = false
+  }
+  metadataType = "StrategyNodeSortField"
+}

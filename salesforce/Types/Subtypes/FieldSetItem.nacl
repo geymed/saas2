@@ -1,0 +1,16 @@
+type salesforce.FieldSetItem {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  string field {
+    _required = false
+  }
+  boolean isFieldManaged {
+    _required = false
+  }
+  boolean isRequired {
+    _required = false
+  }
+  metadataType = "FieldSetItem"
+}

@@ -1,0 +1,19 @@
+type salesforce.InstalledPackage {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  serviceid fullName {
+    _required = false
+  }
+  boolean activateRSS {
+    _required = false
+  }
+  string password {
+    _required = false
+  }
+  string versionNumber {
+    _required = false
+  }
+  metadataType = "InstalledPackage"
+}

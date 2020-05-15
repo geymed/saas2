@@ -1,0 +1,28 @@
+type salesforce.StrategyNodeIf {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  string childNode {
+    _required = false
+  }
+  string description {
+    _required = false
+  }
+  string label {
+    _required = false
+  }
+  string name {
+    _required = false
+  }
+  number limit {
+    _required = false
+  }
+  salesforce.IfExpression childNodeExpression {
+    _required = false
+  }
+  boolean onlyFirstMatch {
+    _required = false
+  }
+  metadataType = "StrategyNodeIf"
+}

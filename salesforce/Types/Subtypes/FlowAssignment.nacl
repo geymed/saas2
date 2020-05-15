@@ -1,0 +1,31 @@
+type salesforce.FlowAssignment {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  salesforce.FlowMetadataValue processMetadataValues {
+    _required = false
+  }
+  string description {
+    _required = false
+  }
+  string name {
+    _required = false
+  }
+  string label {
+    _required = false
+  }
+  number locationX {
+    _required = false
+  }
+  number locationY {
+    _required = false
+  }
+  "List<salesforce.FlowAssignmentItem>" assignmentItems {
+    _required = false
+  }
+  salesforce.FlowConnector connector {
+    _required = false
+  }
+  metadataType = "FlowAssignment"
+}

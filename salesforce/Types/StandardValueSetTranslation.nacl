@@ -1,0 +1,13 @@
+type salesforce.StandardValueSetTranslation {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  serviceid fullName {
+    _required = false
+  }
+  salesforce.ValueTranslation valueTranslation {
+    _required = false
+  }
+  metadataType = "StandardValueSetTranslation"
+}

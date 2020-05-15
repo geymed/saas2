@@ -1,0 +1,16 @@
+type salesforce.HistoryRetentionPolicy {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  number archiveAfterMonths {
+    _required = false
+  }
+  number archiveRetentionYears {
+    _required = false
+  }
+  string description {
+    _required = false
+  }
+  metadataType = "HistoryRetentionPolicy"
+}

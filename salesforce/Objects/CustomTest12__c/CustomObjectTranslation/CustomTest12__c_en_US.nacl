@@ -1,0 +1,27 @@
+salesforce.CustomObjectTranslation CustomTest12__c_en_US {
+  fullName = "CustomTest12__c-en_US"
+  caseValues = [
+      {
+        plural = false
+        value = "CustomTest12"
+      },
+      {
+        plural = true
+        value = "CustomTest12s"
+      },
+  ]
+  fields = [
+      {
+        name = "Test__c"
+        picklistValues = [
+            {
+              masterLabel = "BLA"
+            },
+        ]
+      },
+  ]
+  startsWith = "Consonant"
+  _parent = [
+      salesforce.CustomTest12__c,
+  ]
+}

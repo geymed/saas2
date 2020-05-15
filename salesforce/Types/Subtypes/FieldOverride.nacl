@@ -1,0 +1,16 @@
+type salesforce.FieldOverride {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  string field {
+    _required = false
+  }
+  string formula {
+    _required = false
+  }
+  string literalValue {
+    _required = false
+  }
+  metadataType = "FieldOverride"
+}

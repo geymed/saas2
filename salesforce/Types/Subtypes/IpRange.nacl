@@ -1,0 +1,16 @@
+type salesforce.IpRange {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  string description {
+    _required = false
+  }
+  string end {
+    _required = false
+  }
+  string start {
+    _required = false
+  }
+  metadataType = "IpRange"
+}

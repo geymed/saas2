@@ -1,0 +1,36 @@
+type salesforce.BusinessHoursEntry {
+  string TimeZoneId {
+  }
+  string name {
+  }
+  string default {
+  }
+  string mondayStartTime {
+  }
+  string mondayEndTime {
+  }
+  string TuesdayStartTime {
+  }
+  string TuesdayEndTime {
+  }
+  string wednesdayStartTime {
+  }
+  string wednesdayEndTime {
+  }
+  string thursdayStartTime {
+  }
+  string thursdayEndTime {
+  }
+  string fridayStartTime {
+  }
+  string fridayEndTime {
+  }
+  string saturdayStartTime {
+  }
+  string saturdayEndTime {
+  }
+  string sundayStartTime {
+  }
+  string sundayEndTime {
+  }
+}

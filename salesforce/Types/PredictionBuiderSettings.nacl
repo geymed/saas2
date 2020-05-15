@@ -1,0 +1,6 @@
+type salesforce.PredictionBuiderSettings {
+  boolean enablePredictionBuilder {
+  }
+  boolean isPredictionBuilderStarted {
+  }
+}

@@ -1,0 +1,28 @@
+type salesforce.EmbeddedServiceMenuItem {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  string channel {
+    _required = false
+  }
+  string channelType {
+    _required = false
+    _restriction = {
+        enforce_value = false
+        values = [
+            "CustomURL",
+            "EmbeddedServiceConfig",
+            "MessagingChannel",
+            "Phone",
+        ]
+    }
+  }
+  number displayOrder {
+    _required = false
+  }
+  string phoneNumber {
+    _required = false
+  }
+  metadataType = "EmbeddedServiceMenuItem"
+}

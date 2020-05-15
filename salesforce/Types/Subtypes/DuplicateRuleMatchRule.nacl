@@ -1,0 +1,16 @@
+type salesforce.DuplicateRuleMatchRule {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  string matchRuleSObjectType {
+    _required = false
+  }
+  string matchingRule {
+    _required = false
+  }
+  "List<salesforce.ObjectMapping>" objectMapping {
+    _required = false
+  }
+  metadataType = "DuplicateRuleMatchRule"
+}

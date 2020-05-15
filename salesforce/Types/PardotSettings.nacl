@@ -1,0 +1,20 @@
+settings salesforce.PardotSettings {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  serviceid fullName {
+    _required = false
+  }
+  boolean enableB2bmaAppEnabled {
+  }
+  boolean enableEngagementHistoryDashboards {
+  }
+  boolean enablePardotAppV1Enabled {
+  }
+  boolean enablePardotEnabled {
+  }
+  boolean enableProspectActivityDataset {
+  }
+  metadataType = "PardotSettings"
+}

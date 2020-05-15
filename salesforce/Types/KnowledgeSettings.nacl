@@ -1,0 +1,64 @@
+settings salesforce.KnowledgeSettings {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  serviceid fullName {
+    _required = false
+  }
+  salesforce.KnowledgeAnswerSettings answers {
+    _required = false
+  }
+  salesforce.KnowledgeCaseSettings cases {
+    _required = false
+  }
+  string defaultLanguage {
+    _required = false
+  }
+  boolean enableChatterQuestionKBDeflection {
+    _required = false
+  }
+  boolean enableCreateEditOnArticlesTab {
+    _required = false
+  }
+  boolean enableExternalMediaContent {
+    _required = false
+  }
+  boolean enableKnowledge {
+    _required = false
+  }
+  boolean enableKnowledgeArticleTextHighlights {
+    _required = false
+  }
+  boolean enableKnowledgeKeywordAutoComplete {
+    _required = false
+  }
+  boolean enableKnowledgeTitleAutoComplete {
+    _required = false
+  }
+  boolean enableLightningKbAutoLoadRichTextField {
+    _required = false
+  }
+  boolean enableLightningKnowledge {
+    _required = false
+  }
+  string languages {
+    _required = false
+  }
+  boolean showArticleSummariesCustomerPortal {
+    _required = false
+  }
+  boolean showArticleSummariesInternalApp {
+    _required = false
+  }
+  boolean showArticleSummariesPartnerPortal {
+    _required = false
+  }
+  boolean showValidationStatusField {
+    _required = false
+  }
+  salesforce.KnowledgeSuggestedArticlesSettings suggestedArticles {
+    _required = false
+  }
+  metadataType = "KnowledgeSettings"
+}

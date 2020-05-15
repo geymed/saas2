@@ -1,0 +1,73 @@
+salesforce.AppMenu AppSwitcher {
+  fullName = "AppSwitcher"
+  appMenuItems = [
+      {
+        name = "standard__Platform"
+        type = "CustomApplication"
+      },
+      {
+        name = "standard__Sales"
+        type = "CustomApplication"
+      },
+      {
+        name = "standard__Service"
+        type = "CustomApplication"
+      },
+      {
+        name = "standard__Marketing"
+        type = "CustomApplication"
+      },
+      {
+        name = "standard__ServiceConsole"
+        type = "CustomApplication"
+      },
+      {
+        name = "standard__AppLauncher"
+        type = "CustomApplication"
+      },
+      {
+        name = "standard__Community"
+        type = "CustomApplication"
+      },
+      {
+        name = "standard__Sites"
+        type = "CustomApplication"
+      },
+      {
+        name = "standard__Chatter"
+        type = "CustomApplication"
+      },
+      {
+        name = "standard__Content"
+        type = "CustomApplication"
+      },
+      {
+        name = "standard__Insights"
+        type = "CustomApplication"
+      },
+      {
+        name = "standard__LightningSalesConsole"
+        type = "CustomApplication"
+      },
+      {
+        name = "standard__LightningService"
+        type = "CustomApplication"
+      },
+      {
+        name = "standard__LightningSales"
+        type = "CustomApplication"
+      },
+      {
+        name = "standard__LightningInstrumentation"
+        type = "CustomApplication"
+      },
+      {
+        name = "standard__SalesforceCMS"
+        type = "CustomApplication"
+      },
+      {
+        name = "standard__LightningBolt"
+        type = "CustomApplication"
+      },
+  ]
+}

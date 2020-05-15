@@ -1,0 +1,13 @@
+type salesforce.ProfileFlowAccess {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  boolean enabled {
+    _required = false
+  }
+  string flow {
+    _required = false
+  }
+  metadataType = "ProfileFlowAccess"
+}

@@ -1,0 +1,22 @@
+type salesforce.SharingRules {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  serviceid fullName {
+    _required = false
+  }
+  "List<salesforce.SharingCriteriaRule>" sharingCriteriaRules {
+    _required = false
+  }
+  salesforce.SharingGuestRule sharingGuestRules {
+    _required = false
+  }
+  salesforce.SharingOwnerRule sharingOwnerRules {
+    _required = false
+  }
+  salesforce.SharingTerritoryRule sharingTerritoryRules {
+    _required = false
+  }
+  metadataType = "SharingRules"
+}

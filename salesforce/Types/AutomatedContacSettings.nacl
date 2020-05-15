@@ -1,0 +1,10 @@
+type salesforce.AutomatedContacSettings {
+  boolean enableAddContactAutomatically {
+  }
+  boolean enableAddContactRoleAutomatically {
+  }
+  boolean enableAddContactRoleWithSuggestion {
+  }
+  boolean enableAddContactWithSuggestion {
+  }
+}

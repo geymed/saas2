@@ -1,0 +1,10 @@
+type salesforce.ApprovalPageField {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  "List<string>" field {
+    _required = false
+  }
+  metadataType = "ApprovalPageField"
+}

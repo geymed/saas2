@@ -1,0 +1,16 @@
+settings salesforce.MacroSettings {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  boolean enableAdvancedSearch {
+    _required = false
+  }
+  serviceid fullName {
+    _required = false
+  }
+  boolean macrosInFolders {
+    _required = false
+  }
+  metadataType = "MacroSettings"
+}

@@ -1,0 +1,13 @@
+type salesforce.ProfileApexPageAccess {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  string apexPage {
+    _required = false
+  }
+  boolean enabled {
+    _required = false
+  }
+  metadataType = "ProfileApexPageAccess"
+}

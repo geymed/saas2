@@ -1,0 +1,19 @@
+type salesforce.BusinessProcess {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  string description {
+    _required = false
+  }
+  serviceid fullName {
+    _required = false
+  }
+  boolean isActive {
+    _required = false
+  }
+  "List<salesforce.PicklistValue>" values {
+    _required = false
+  }
+  metadataType = "BusinessProcess"
+}

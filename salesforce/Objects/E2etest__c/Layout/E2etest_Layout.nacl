@@ -1,0 +1,88 @@
+salesforce.Layout E2etest_Layout {
+  fullName = "E2etest__c-E2etest Layout"
+  layoutSections = [
+      {
+        customLabel = false
+        detailHeading = false
+        editHeading = true
+        label = "Information"
+        layoutColumns = [
+            {
+              layoutItems = [
+                  {
+                    behavior = "Required"
+                    field = "Test__c"
+                  },
+                  {
+                    behavior = "Required"
+                    field = "Name__c"
+                  },
+                  {
+                    behavior = "Required"
+                    field = "Test2__c"
+                  },
+                  {
+                    behavior = "Required"
+                    field = "Name"
+                  },
+              ]
+            },
+            {
+              layoutItems = [
+                  {
+                    behavior = "Edit"
+                    field = "OwnerId"
+                  },
+              ]
+            },
+        ]
+        style = "TwoColumnsTopToBottom"
+      },
+      {
+        customLabel = false
+        detailHeading = false
+        editHeading = true
+        label = "System Information"
+        layoutColumns = [
+            {
+              layoutItems = [
+                  {
+                    behavior = "Readonly"
+                    field = "CreatedById"
+                  },
+              ]
+            },
+            {
+              layoutItems = [
+                  {
+                    behavior = "Readonly"
+                    field = "LastModifiedById"
+                  },
+              ]
+            },
+        ]
+        style = "TwoColumnsTopToBottom"
+      },
+      {
+        customLabel = false
+        detailHeading = false
+        editHeading = true
+        style = "CustomLinks"
+      },
+  ]
+  miniLayout = {
+      fields = [
+          "Test__c",
+          "Name__c",
+          "Test2__c",
+      ]
+  }
+  showEmailCheckbox = false
+  showHighlightsPanel = false
+  showInteractionLogPanel = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  _parent = [
+      salesforce.E2etest__c,
+  ]
+}

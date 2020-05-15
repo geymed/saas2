@@ -1,0 +1,69 @@
+type salesforce.Profile {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  "List<salesforce.ProfileApplicationVisibility>" applicationVisibilities {
+    _required = false
+  }
+  salesforce.ProfileCategoryGroupVisibility categoryGroupVisibilities {
+    _required = false
+  }
+  "List<salesforce.ProfileApexClassAccess>" classAccesses {
+    _required = false
+  }
+  boolean custom {
+    _required = false
+  }
+  salesforce.ProfileCustomMetadataTypeAccess customMetadataTypeAccesses {
+    _required = false
+  }
+  salesforce.ProfileCustomPermissions customPermissions {
+    _required = false
+  }
+  salesforce.ProfileCustomSettingAccess customSettingAccesses {
+    _required = false
+  }
+  string description {
+    _required = false
+  }
+  salesforce.ProfileExternalDataSourceAccess externalDataSourceAccesses {
+    _required = false
+  }
+  "List<salesforce.ProfileFieldLevelSecurity>" fieldPermissions {
+    _required = false
+  }
+  "List<salesforce.ProfileFlowAccess>" flowAccesses {
+    _required = false
+  }
+  serviceid fullName {
+    _required = false
+  }
+  "List<salesforce.ProfileLayoutAssignment>" layoutAssignments {
+    _required = false
+  }
+  salesforce.ProfileLoginHours loginHours {
+    _required = false
+  }
+  salesforce.ProfileLoginIpRange loginIpRanges {
+    _required = false
+  }
+  "List<salesforce.ProfileObjectPermissions>" objectPermissions {
+    _required = false
+  }
+  "List<salesforce.ProfileApexPageAccess>" pageAccesses {
+    _required = false
+  }
+  salesforce.ProfileActionOverride profileActionOverrides {
+    _required = false
+  }
+  "List<salesforce.ProfileRecordTypeVisibility>" recordTypeVisibilities {
+    _required = false
+  }
+  string userLicense {
+    _required = false
+  }
+  "List<salesforce.ProfileUserPermission>" userPermissions {
+  }
+  metadataType = "Profile"
+}

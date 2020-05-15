@@ -1,0 +1,13 @@
+settings salesforce.BotSettings {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  serviceid fullName {
+    _required = false
+  }
+  boolean enableBots {
+    _required = false
+  }
+  metadataType = "BotSettings"
+}

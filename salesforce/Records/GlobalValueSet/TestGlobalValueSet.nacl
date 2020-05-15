@@ -1,0 +1,18 @@
+salesforce.GlobalValueSet TestGlobalValueSet {
+  fullName = "TestGlobalValueSet"
+  customValue = [
+      {
+        fullName = "Val1"
+        default = true
+        label = "Val1"
+      },
+      {
+        fullName = "Val2"
+        default = false
+        label = "Val2"
+      },
+  ]
+  description = "GlobalValueSet that should be fetched in e2e test"
+  masterLabel = "TestGlobalValueSet"
+  sorted = false
+}

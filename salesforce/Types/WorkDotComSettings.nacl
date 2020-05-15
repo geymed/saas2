@@ -1,0 +1,10 @@
+settings salesforce.WorkDotComSettings {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  serviceid fullName {
+    _required = false
+  }
+  metadataType = "WorkDotComSettings"
+}

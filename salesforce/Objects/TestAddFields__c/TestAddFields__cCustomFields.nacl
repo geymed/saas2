@@ -1,0 +1,243 @@
+type salesforce.TestAddFields__c {
+  salesforce.Location Golf__c {
+    apiName = "TestAddFields__c.Golf__c"
+    label = "Location label"
+    _required = false
+    displayLocationInDecimal = true
+    scale = 2
+  }
+  salesforce.Picklist Uniform__c {
+    apiName = "TestAddFields__c.Uniform__c"
+    label = "Global Picklist label"
+    _required = false
+    restricted = true
+    valueSetName = salesforce.GlobalValueSet.instance.TestGlobalValueSet
+  }
+  salesforce.Html Lima__c {
+    apiName = "TestAddFields__c.Lima__c"
+    label = "RichTextArea label"
+    _required = false
+    inlineHelpText = "RichTextArea help"
+    length = 32600
+    description = "RichTextArea description"
+    visibleLines = 32
+  }
+  salesforce.Date Charlie__c {
+    apiName = "TestAddFields__c.Charlie__c"
+    label = "Date label"
+    _required = false
+    defaultValueFormula = "Today() + 7"
+    inlineHelpText = "Date help"
+    description = "Date description"
+  }
+  salesforce.Picklist Pickle__c {
+    apiName = "TestAddFields__c.Pickle__c"
+    label = "Picklist label"
+    _required = false
+    valueSet = [
+        {
+          fullName = "NEW"
+          color = "#FF0000"
+          default = true
+          label = "NEW"
+        },
+        {
+          fullName = "OLD"
+          default = false
+          label = "OLD"
+        },
+        {
+          fullName = "OLDEST"
+          default = false
+          isActive = false
+          label = "OLDEST"
+        },
+    ]
+    restricted = true
+    description = "Picklist description"
+    sorted = false
+  }
+  salesforce.LongTextArea Kilo__c {
+    apiName = "TestAddFields__c.Kilo__c"
+    label = "LongTextArea label"
+    _required = false
+    length = 32700
+    visibleLines = 5
+  }
+  salesforce.DateTime Echo__c {
+    apiName = "TestAddFields__c.Echo__c"
+    label = "DateTime label"
+    _required = false
+    defaultValueFormula = "NOW() + 7"
+    inlineHelpText = "DateTime help"
+    description = "DateTime description"
+  }
+  salesforce.EncryptedText November__c {
+    apiName = "TestAddFields__c.November__c"
+    label = "EncryptedText label"
+    _required = false
+    maskType = "creditCard"
+    length = 35
+    maskChar = "asterisk"
+  }
+  salesforce.Email Foxtrot__c {
+    apiName = "TestAddFields__c.Foxtrot__c"
+    label = "Email label"
+    _required = false
+    unique = true
+    externalId = true
+  }
+  salesforce.Lookup TestAddQuebec7306162__c {
+    apiName = "TestAddFields__c.TestAddQuebec7306162__c"
+    label = "Lookup label"
+    _required = false
+    allowLookupRecordDeletion = false
+    referenceTo = [
+        "Opportunity",
+    ]
+    lookupFilter = {
+        active = true
+        booleanFilter = "1 OR 2"
+        errorMessage = "This is the Error message"
+        filterItems = [
+            {
+              field = "Opportunity.OwnerId"
+              operation = "equals"
+              valueField = "$User.Id"
+            },
+            {
+              field = "Opportunity.NextStep"
+              operation = "equals"
+              value = "NextStepValue"
+            },
+        ]
+        infoMessage = "This is the Info message"
+        isOptional = false
+    }
+  }
+  salesforce.Currency Alpha__c {
+    apiName = "TestAddFields__c.Alpha__c"
+    label = "Currency label"
+    _required = true
+    defaultValueFormula = "25"
+    inlineHelpText = "Currency help"
+    scale = 3
+    precision = 18
+    description = "Currency description"
+  }
+  salesforce.Number Papa__c {
+    apiName = "TestAddFields__c.Papa__c"
+    label = "Number label"
+    _required = false
+    defaultValueFormula = "42"
+    precision = 15
+    scale = 3
+    unique = true
+    externalId = false
+  }
+  salesforce.FormulaCheckbox Whiskey__c {
+    apiName = "TestAddFields__c.Whiskey__c"
+    label = "Formula Checkbox label"
+    formula = "5 > 4"
+    businessStatus = "Hidden"
+    formulaTreatBlanksAs = "BlankAsZero"
+    securityClassification = "Restricted"
+  }
+  salesforce.Phone Juliett__c {
+    apiName = "TestAddFields__c.Juliett__c"
+    label = "Phone label"
+    _required = true
+    inlineHelpText = "Phone help"
+  }
+  salesforce.MasterDetail TestAddRomeo7306162__c {
+    apiName = "TestAddFields__c.TestAddRomeo7306162__c"
+    label = "MasterDetail label"
+    _required = false
+    writeRequiresMasterRead = true
+    reparentableMasterDetail = true
+    referenceTo = [
+        "Case",
+    ]
+    relationshipOrder = 0
+  }
+  salesforce.Url Oscar__c {
+    apiName = "TestAddFields__c.Oscar__c"
+    label = "Url label"
+    _required = false
+  }
+  salesforce.Percent India__c {
+    apiName = "TestAddFields__c.India__c"
+    label = "Percent label"
+    _required = false
+    scale = 3
+    precision = 12
+    description = "Percent description"
+  }
+  salesforce.TextArea Mike__c {
+    apiName = "TestAddFields__c.Mike__c"
+    label = "TextArea label"
+    _required = false
+    inlineHelpText = "TextArea help"
+    description = "TextArea description"
+  }
+  salesforce.Time Delta__c {
+    apiName = "TestAddFields__c.Delta__c"
+    label = "Time label"
+    _required = true
+    defaultValueFormula = "TIMENOW() + 5"
+    inlineHelpText = "Time help"
+    description = "Time description"
+  }
+  salesforce.Checkbox Tango__c {
+    apiName = "TestAddFields__c.Tango__c"
+    label = "Checkbox label"
+    defaultValue = true
+  }
+  salesforce.MultiselectPicklist Hotel__c {
+    apiName = "TestAddFields__c.Hotel__c"
+    label = "Multipicklist label"
+    _required = false
+    valueSet = [
+        {
+          fullName = "DO"
+          default = true
+          label = "DO"
+        },
+        {
+          fullName = "RE"
+          default = false
+          label = "RE"
+        },
+    ]
+    restricted = false
+    fieldDependency = {
+        controllingField = "Pickle__c"
+        valueSettings = [
+            {
+              valueName = "DO"
+              controllingFieldValue = [
+                  "NEW",
+                  "OLD",
+              ]
+            },
+            {
+              valueName = "RE"
+              controllingFieldValue = [
+                  "OLD",
+              ]
+            },
+        ]
+    }
+    visibleLines = 4
+    sorted = false
+  }
+  salesforce.Text Sierra__c {
+    apiName = "TestAddFields__c.Sierra__c"
+    label = "Text label"
+    _required = false
+    unique = true
+    externalId = true
+    caseSensitive = true
+    length = 100
+  }
+}

@@ -1,0 +1,54 @@
+type salesforce.FlowDynamicChoiceSet {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  string description {
+    _required = false
+  }
+  string displayField {
+    _required = false
+  }
+  salesforce.FlowRecordFilter filters {
+    _required = false
+  }
+  number limit {
+    _required = false
+  }
+  string name {
+    _required = false
+  }
+  string object {
+    _required = false
+  }
+  salesforce.FlowOutputFieldAssignment outputAssignments {
+    _required = false
+  }
+  string picklistField {
+    _required = false
+  }
+  string picklistObject {
+    _required = false
+  }
+  salesforce.FlowMetadataValue processMetadataValues {
+    _required = false
+  }
+  string sortField {
+    _required = false
+  }
+  string valueField {
+    _required = false
+  }
+  string dataType {
+    _values = [
+        "Currency",
+        "Date",
+        "Number",
+        "String",
+        "Boolean",
+        "Picklist",
+        "Multipicklist",
+    ]
+  }
+  metadataType = "FlowDynamicChoiceSet"
+}

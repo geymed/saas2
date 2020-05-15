@@ -1,0 +1,138 @@
+type salesforce.Product2 {
+  salesforce.Text Id {
+    apiName = "Product2.Id"
+    label = "Product ID"
+    _required = true
+    unique = false
+    caseSensitive = false
+    length = 18
+  }
+  salesforce.Name Name {
+    apiName = "Product2.Name"
+    label = "Product Name"
+    _required = true
+  }
+  salesforce.Text ProductCode {
+    apiName = "Product2.ProductCode"
+    label = "Product Code"
+    _required = false
+    unique = false
+    caseSensitive = false
+    length = 255
+  }
+  salesforce.LongTextArea Description {
+    apiName = "Product2.Description"
+    label = "Product Description"
+    _required = false
+    length = 4000
+  }
+  salesforce.Checkbox IsActive {
+    apiName = "Product2.IsActive"
+    label = "Active"
+    defaultValue = false
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "Product2.CreatedDate"
+    label = "Created Date"
+    _required = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "Product2.CreatedById"
+    label = "Created By ID"
+    _required = true
+    allowLookupRecordDeletion = true
+    referenceTo = [
+        "User",
+    ]
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "Product2.LastModifiedDate"
+    label = "Last Modified Date"
+    _required = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "Product2.LastModifiedById"
+    label = "Last Modified By ID"
+    _required = true
+    allowLookupRecordDeletion = true
+    referenceTo = [
+        "User",
+    ]
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "Product2.SystemModstamp"
+    label = "System Modstamp"
+    _required = true
+  }
+  salesforce.Picklist Family {
+    apiName = "Product2.Family"
+    label = "Product Family"
+    _required = false
+    restricted = false
+    valueSetName = salesforce.StandardValueSet.instance.Product2Family
+  }
+  salesforce.Lookup ExternalDataSourceId {
+    apiName = "Product2.ExternalDataSourceId"
+    label = "External Data Source ID"
+    _required = false
+    allowLookupRecordDeletion = true
+    referenceTo = [
+        "ExternalDataSource",
+    ]
+  }
+  salesforce.Text ExternalId {
+    apiName = "Product2.ExternalId"
+    label = "External ID"
+    _required = false
+    unique = false
+    caseSensitive = false
+    length = 255
+  }
+  salesforce.Url DisplayUrl {
+    apiName = "Product2.DisplayUrl"
+    label = "Display URL"
+    _required = false
+  }
+  salesforce.Picklist QuantityUnitOfMeasure {
+    apiName = "Product2.QuantityUnitOfMeasure"
+    label = "Quantity Unit Of Measure"
+    _required = false
+    valueSet = [
+        {
+          fullName = "Each"
+          default = false
+          label = "Each"
+          isActive = true
+        },
+    ]
+    restricted = false
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "Product2.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+  }
+  salesforce.Checkbox IsArchived {
+    apiName = "Product2.IsArchived"
+    label = "Archived"
+    defaultValue = false
+  }
+  salesforce.DateTime LastViewedDate {
+    apiName = "Product2.LastViewedDate"
+    label = "Last Viewed Date"
+    _required = false
+  }
+  salesforce.DateTime LastReferencedDate {
+    apiName = "Product2.LastReferencedDate"
+    label = "Last Referenced Date"
+    _required = false
+  }
+  salesforce.Text StockKeepingUnit {
+    apiName = "Product2.StockKeepingUnit"
+    label = "Product SKU"
+    _required = false
+    unique = false
+    caseSensitive = false
+    length = 180
+  }
+}

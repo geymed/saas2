@@ -1,0 +1,113 @@
+type salesforce.OrgMetricScanSummary {
+  salesforce.Text Id {
+    apiName = "OrgMetricScanSummary.Id"
+    label = "Org Metric Scan ID"
+    _required = true
+    unique = false
+    caseSensitive = false
+    length = 18
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "OrgMetricScanSummary.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+  }
+  salesforce.Name Name {
+    apiName = "OrgMetricScanSummary.Name"
+    label = "Org Metric Scan Summary"
+    _required = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "OrgMetricScanSummary.CreatedDate"
+    label = "Created Date"
+    _required = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "OrgMetricScanSummary.CreatedById"
+    label = "Created By ID"
+    _required = true
+    allowLookupRecordDeletion = true
+    referenceTo = [
+        "User",
+    ]
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "OrgMetricScanSummary.LastModifiedDate"
+    label = "Last Modified Date"
+    _required = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "OrgMetricScanSummary.LastModifiedById"
+    label = "Last Modified By ID"
+    _required = true
+    allowLookupRecordDeletion = true
+    referenceTo = [
+        "User",
+    ]
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "OrgMetricScanSummary.SystemModstamp"
+    label = "System Modstamp"
+    _required = true
+  }
+  salesforce.Lookup OrgMetricId {
+    apiName = "OrgMetricScanSummary.OrgMetricId"
+    label = "Org Metric ID"
+    _required = true
+    allowLookupRecordDeletion = true
+    referenceTo = [
+        "OrgMetric",
+    ]
+  }
+  salesforce.Picklist Status {
+    apiName = "OrgMetricScanSummary.Status"
+    label = "Status"
+    _required = false
+  }
+  salesforce.Picklist ImplementationEffort {
+    apiName = "OrgMetricScanSummary.ImplementationEffort"
+    label = "Implementation Effort"
+    _required = false
+  }
+  salesforce.Picklist ErrorMessage {
+    apiName = "OrgMetricScanSummary.ErrorMessage"
+    label = "Error Message"
+    _required = false
+  }
+  salesforce.Number ItemCount {
+    apiName = "OrgMetricScanSummary.ItemCount"
+    label = "Count"
+    _required = false
+    precision = 9
+    scale = 0
+    unique = false
+  }
+  salesforce.Number FeatureLimit {
+    apiName = "OrgMetricScanSummary.FeatureLimit"
+    label = "Limit"
+    _required = false
+    precision = 9
+    scale = 0
+    unique = false
+  }
+  salesforce.Text Unit {
+    apiName = "OrgMetricScanSummary.Unit"
+    label = "Unit"
+    _required = false
+    unique = false
+    caseSensitive = false
+    length = 64
+  }
+  salesforce.Percent PercentUsage {
+    apiName = "OrgMetricScanSummary.PercentUsage"
+    label = "Percent Usage"
+    _required = false
+    scale = 0
+    precision = 3
+  }
+  salesforce.DateTime ScanDate {
+    apiName = "OrgMetricScanSummary.ScanDate"
+    label = "Scan Date"
+    _required = false
+  }
+}

@@ -1,0 +1,37 @@
+type salesforce.SearchLayouts {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  string customTabListAdditionalFields {
+    _required = false
+  }
+  string excludedStandardButtons {
+    _required = false
+  }
+  string listViewButtons {
+    _required = false
+  }
+  string lookupDialogsAdditionalFields {
+    _required = false
+  }
+  string lookupFilterFields {
+    _required = false
+  }
+  string lookupPhoneDialogsAdditionalFields {
+    _required = false
+  }
+  string massQuickActions {
+    _required = false
+  }
+  string searchFilterFields {
+    _required = false
+  }
+  string searchResultsAdditionalFields {
+    _required = false
+  }
+  string searchResultsCustomButtons {
+    _required = false
+  }
+  metadataType = "SearchLayouts"
+}

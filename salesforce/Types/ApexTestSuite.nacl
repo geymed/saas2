@@ -1,0 +1,13 @@
+type salesforce.ApexTestSuite {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  serviceid fullName {
+    _required = false
+  }
+  string testClassName {
+    _required = false
+  }
+  metadataType = "ApexTestSuite"
+}

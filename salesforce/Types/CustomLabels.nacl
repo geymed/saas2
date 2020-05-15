@@ -1,0 +1,13 @@
+type salesforce.CustomLabels {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  serviceid fullName {
+    _required = false
+  }
+  salesforce.CustomLabel labels {
+    _required = false
+  }
+  metadataType = "CustomLabels"
+}

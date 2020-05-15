@@ -1,0 +1,10 @@
+type salesforce.QuotasSettings {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  boolean showQuotas {
+    _required = false
+  }
+  metadataType = "QuotasSettings"
+}

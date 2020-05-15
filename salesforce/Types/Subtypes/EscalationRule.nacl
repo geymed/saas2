@@ -1,0 +1,16 @@
+type salesforce.EscalationRule {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  boolean active {
+    _required = false
+  }
+  serviceid fullName {
+    _required = false
+  }
+  "List<salesforce.RuleEntry>" ruleEntry {
+    _required = false
+  }
+  metadataType = "EscalationRule"
+}

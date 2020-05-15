@@ -1,0 +1,31 @@
+type salesforce.Role {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  serviceid fullName {
+    _required = false
+  }
+  string caseAccessLevel {
+    _required = false
+  }
+  string contactAccessLevel {
+    _required = false
+  }
+  string description {
+    _required = false
+  }
+  boolean mayForecastManagerShare {
+    _required = false
+  }
+  string name {
+    _required = false
+  }
+  string opportunityAccessLevel {
+    _required = false
+  }
+  string parentRole {
+    _required = false
+  }
+  metadataType = "Role"
+}

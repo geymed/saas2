@@ -1,0 +1,13 @@
+type salesforce.TabLimitConfig {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  string maxNumberOfPrimaryTabs {
+    _required = false
+  }
+  string maxNumberOfSubTabs {
+    _required = false
+  }
+  metadataType = "TabLimitConfig"
+}

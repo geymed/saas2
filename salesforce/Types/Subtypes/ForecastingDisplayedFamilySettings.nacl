@@ -1,0 +1,10 @@
+type salesforce.ForecastingDisplayedFamilySettings {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  string productFamily {
+    _required = false
+  }
+  metadataType = "ForecastingDisplayedFamilySettings"
+}

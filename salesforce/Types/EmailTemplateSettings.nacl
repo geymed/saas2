@@ -1,0 +1,12 @@
+settings salesforce.EmailTemplateSettings {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  serviceid fullName {
+    _required = false
+  }
+  boolean enableTemplateEnhancedFolderPref {
+  }
+  metadataType = "EmailTemplateSettings"
+}

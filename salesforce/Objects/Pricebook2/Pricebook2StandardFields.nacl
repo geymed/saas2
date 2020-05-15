@@ -1,0 +1,86 @@
+type salesforce.Pricebook2 {
+  salesforce.Text Id {
+    apiName = "Pricebook2.Id"
+    label = "Price Book ID"
+    _required = true
+    unique = false
+    caseSensitive = false
+    length = 18
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "Pricebook2.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+  }
+  salesforce.Name Name {
+    apiName = "Pricebook2.Name"
+    label = "Price Book Name"
+    _required = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "Pricebook2.CreatedDate"
+    label = "Created Date"
+    _required = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "Pricebook2.CreatedById"
+    label = "Created By ID"
+    _required = true
+    allowLookupRecordDeletion = true
+    referenceTo = [
+        "User",
+    ]
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "Pricebook2.LastModifiedDate"
+    label = "Last Modified Date"
+    _required = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "Pricebook2.LastModifiedById"
+    label = "Last Modified By ID"
+    _required = true
+    allowLookupRecordDeletion = true
+    referenceTo = [
+        "User",
+    ]
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "Pricebook2.SystemModstamp"
+    label = "System Modstamp"
+    _required = true
+  }
+  salesforce.DateTime LastViewedDate {
+    apiName = "Pricebook2.LastViewedDate"
+    label = "Last Viewed Date"
+    _required = false
+  }
+  salesforce.DateTime LastReferencedDate {
+    apiName = "Pricebook2.LastReferencedDate"
+    label = "Last Referenced Date"
+    _required = false
+  }
+  salesforce.Checkbox IsActive {
+    apiName = "Pricebook2.IsActive"
+    label = "Active"
+    defaultValue = false
+  }
+  salesforce.Checkbox IsArchived {
+    apiName = "Pricebook2.IsArchived"
+    label = "Archived"
+    defaultValue = false
+  }
+  salesforce.Text Description {
+    apiName = "Pricebook2.Description"
+    label = "Description"
+    _required = false
+    unique = false
+    caseSensitive = false
+    length = 255
+  }
+  salesforce.Checkbox IsStandard {
+    apiName = "Pricebook2.IsStandard"
+    label = "Is Standard Price Book"
+    defaultValue = false
+  }
+}

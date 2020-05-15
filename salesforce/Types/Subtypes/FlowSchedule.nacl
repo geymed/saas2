@@ -1,0 +1,24 @@
+type salesforce.FlowSchedule {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  string frequency {
+    _required = false
+    _restriction = {
+        enforce_value = false
+        values = [
+            "Daily",
+            "Once",
+            "Weekly",
+        ]
+    }
+  }
+  string startDate {
+    _required = false
+  }
+  string startTime {
+    _required = false
+  }
+  metadataType = "FlowSchedule"
+}

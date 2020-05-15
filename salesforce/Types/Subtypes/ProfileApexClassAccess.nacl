@@ -1,0 +1,13 @@
+type salesforce.ProfileApexClassAccess {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  string apexClass {
+    _required = false
+  }
+  boolean enabled {
+    _required = false
+  }
+  metadataType = "ProfileApexClassAccess"
+}

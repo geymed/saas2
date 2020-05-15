@@ -1,0 +1,94 @@
+type salesforce.QuickText {
+  salesforce.Text Id {
+    apiName = "QuickText.Id"
+    label = "Quick Text ID"
+    _required = true
+    unique = false
+    caseSensitive = false
+    length = 18
+  }
+  salesforce.Lookup OwnerId {
+    apiName = "QuickText.OwnerId"
+    label = "Owner ID"
+    _required = true
+    allowLookupRecordDeletion = true
+    referenceTo = [
+        "Group",
+        "User",
+    ]
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "QuickText.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+  }
+  salesforce.Name Name {
+    apiName = "QuickText.Name"
+    label = "Quick Text Name"
+    _required = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "QuickText.CreatedDate"
+    label = "Created Date"
+    _required = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "QuickText.CreatedById"
+    label = "Created By ID"
+    _required = true
+    allowLookupRecordDeletion = true
+    referenceTo = [
+        "User",
+    ]
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "QuickText.LastModifiedDate"
+    label = "Last Modified Date"
+    _required = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "QuickText.LastModifiedById"
+    label = "Last Modified By ID"
+    _required = true
+    allowLookupRecordDeletion = true
+    referenceTo = [
+        "User",
+    ]
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "QuickText.SystemModstamp"
+    label = "System Modstamp"
+    _required = true
+  }
+  salesforce.DateTime LastViewedDate {
+    apiName = "QuickText.LastViewedDate"
+    label = "Last Viewed Date"
+    _required = false
+  }
+  salesforce.DateTime LastReferencedDate {
+    apiName = "QuickText.LastReferencedDate"
+    label = "Last Referenced Date"
+    _required = false
+  }
+  salesforce.LongTextArea Message {
+    apiName = "QuickText.Message"
+    label = "Message"
+    _required = true
+    length = 4096
+  }
+  salesforce.Picklist Category {
+    apiName = "QuickText.Category"
+    label = "Category"
+    _required = false
+    restricted = false
+    valueSetName = salesforce.StandardValueSet.instance.QuickTextCategory
+  }
+  salesforce.MultiselectPicklist Channel {
+    apiName = "QuickText.Channel"
+    label = "Channel"
+    _required = false
+    restricted = false
+    visibleLines = 0
+    valueSetName = salesforce.StandardValueSet.instance.QuickTextChannel
+  }
+}

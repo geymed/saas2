@@ -1,0 +1,63 @@
+type salesforce.new__c {
+  salesforce.Text Id {
+    apiName = "new__c.Id"
+    label = "Record ID"
+    _required = true
+    unique = false
+    caseSensitive = false
+    length = 18
+  }
+  salesforce.Lookup OwnerId {
+    apiName = "new__c.OwnerId"
+    label = "Owner ID"
+    _required = true
+    allowLookupRecordDeletion = true
+    referenceTo = [
+        "Group",
+        "User",
+    ]
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "new__c.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+  }
+  salesforce.Name Name {
+    apiName = "new__c.Name"
+    label = "Name"
+    _required = false
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "new__c.CreatedDate"
+    label = "Created Date"
+    _required = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "new__c.CreatedById"
+    label = "Created By ID"
+    _required = true
+    allowLookupRecordDeletion = true
+    referenceTo = [
+        "User",
+    ]
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "new__c.LastModifiedDate"
+    label = "Last Modified Date"
+    _required = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "new__c.LastModifiedById"
+    label = "Last Modified By ID"
+    _required = true
+    allowLookupRecordDeletion = true
+    referenceTo = [
+        "User",
+    ]
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "new__c.SystemModstamp"
+    label = "System Modstamp"
+    _required = true
+  }
+}

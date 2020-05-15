@@ -1,0 +1,13 @@
+type salesforce.LwcResource {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  string filePath {
+    _required = false
+  }
+  string source {
+    _required = false
+  }
+  metadataType = "LwcResource"
+}

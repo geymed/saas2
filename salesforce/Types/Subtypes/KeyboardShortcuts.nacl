@@ -1,0 +1,13 @@
+type salesforce.KeyboardShortcuts {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  salesforce.CustomShortcut customShortcuts {
+    _required = false
+  }
+  "List<salesforce.DefaultShortcut>" defaultShortcuts {
+    _required = false
+  }
+  metadataType = "KeyboardShortcuts"
+}

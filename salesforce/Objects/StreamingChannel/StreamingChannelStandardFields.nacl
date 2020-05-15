@@ -1,0 +1,86 @@
+type salesforce.StreamingChannel {
+  salesforce.Text Id {
+    apiName = "StreamingChannel.Id"
+    label = "Streaming Channel Id"
+    _required = true
+    unique = false
+    caseSensitive = false
+    length = 18
+  }
+  salesforce.Lookup OwnerId {
+    apiName = "StreamingChannel.OwnerId"
+    label = "Owner ID"
+    _required = true
+    allowLookupRecordDeletion = true
+    referenceTo = [
+        "Group",
+        "User",
+    ]
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "StreamingChannel.IsDeleted"
+    label = "Is Deleted"
+    defaultValue = false
+  }
+  salesforce.Name Name {
+    apiName = "StreamingChannel.Name"
+    label = "Streaming Channel Name"
+    _required = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "StreamingChannel.CreatedDate"
+    label = "Created Date"
+    _required = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "StreamingChannel.CreatedById"
+    label = "Created By ID"
+    _required = true
+    allowLookupRecordDeletion = true
+    referenceTo = [
+        "User",
+    ]
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "StreamingChannel.LastModifiedDate"
+    label = "Last Modified Date"
+    _required = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "StreamingChannel.LastModifiedById"
+    label = "Last Modified By ID"
+    _required = true
+    allowLookupRecordDeletion = true
+    referenceTo = [
+        "User",
+    ]
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "StreamingChannel.SystemModstamp"
+    label = "System Modstamp"
+    _required = true
+  }
+  salesforce.DateTime LastViewedDate {
+    apiName = "StreamingChannel.LastViewedDate"
+    label = "Last Viewed Date"
+    _required = false
+  }
+  salesforce.DateTime LastReferencedDate {
+    apiName = "StreamingChannel.LastReferencedDate"
+    label = "Last Referenced Date"
+    _required = false
+  }
+  salesforce.Checkbox IsDynamic {
+    apiName = "StreamingChannel.IsDynamic"
+    label = "Is Dynamically Created"
+    defaultValue = false
+  }
+  salesforce.Text Description {
+    apiName = "StreamingChannel.Description"
+    label = "Description"
+    _required = false
+    unique = false
+    caseSensitive = false
+    length = 255
+  }
+}

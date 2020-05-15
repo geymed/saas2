@@ -1,0 +1,13 @@
+type salesforce.WebLinkTranslation {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  string label {
+    _required = false
+  }
+  string name {
+    _required = false
+  }
+  metadataType = "WebLinkTranslation"
+}

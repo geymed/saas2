@@ -1,0 +1,16 @@
+type salesforce.Index {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  serviceid fullName {
+    _required = false
+  }
+  salesforce.IndexField fields {
+    _required = false
+  }
+  string label {
+    _required = false
+  }
+  metadataType = "Index"
+}

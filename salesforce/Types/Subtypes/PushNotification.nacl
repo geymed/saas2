@@ -1,0 +1,13 @@
+type salesforce.PushNotification {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  string fieldNames {
+    _required = false
+  }
+  string objectName {
+    _required = false
+  }
+  metadataType = "PushNotification"
+}

@@ -1,0 +1,13 @@
+type salesforce.RecommendationLoadCondition {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  string field {
+    _required = false
+  }
+  salesforce.RecommendationConditionValue value {
+    _required = false
+  }
+  metadataType = "RecommendationLoadCondition"
+}

@@ -1,0 +1,14 @@
+settings salesforce.BusinessHoursSettings {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  serviceid fullName {
+    _required = false
+  }
+  "List<salesforce.BusinessHoursEntry>" businessHours {
+  }
+  "List<salesforce.Holidays>" holidays {
+  }
+  metadataType = "BusinessHoursSettings"
+}

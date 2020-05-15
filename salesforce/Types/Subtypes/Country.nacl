@@ -1,0 +1,31 @@
+type salesforce.Country {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  boolean active {
+    _required = false
+  }
+  string integrationValue {
+    _required = false
+  }
+  string isoCode {
+    _required = false
+  }
+  string label {
+    _required = false
+  }
+  boolean orgDefault {
+    _required = false
+  }
+  boolean standard {
+    _required = false
+  }
+  "List<salesforce.State>" states {
+    _required = false
+  }
+  boolean visible {
+    _required = false
+  }
+  metadataType = "Country"
+}

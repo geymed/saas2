@@ -1,0 +1,14 @@
+settings salesforce.NotificationsSettings {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  serviceid fullName {
+    _required = false
+  }
+  boolean enableMobileAppPushNotifications {
+  }
+  boolean enableNotifications {
+  }
+  metadataType = "NotificationsSettings"
+}

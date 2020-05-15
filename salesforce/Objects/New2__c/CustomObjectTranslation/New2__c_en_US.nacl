@@ -1,0 +1,22 @@
+salesforce.CustomObjectTranslation New2__c_en_US {
+  fullName = "New2__c-en_US"
+  caseValues = [
+      {
+        plural = false
+        value = "New2"
+      },
+      {
+        plural = true
+        value = "New2s"
+      },
+  ]
+  fields = [
+      {
+        name = "SLASerialNumber__c"
+      },
+  ]
+  startsWith = "Consonant"
+  _parent = [
+      salesforce.New2__c,
+  ]
+}

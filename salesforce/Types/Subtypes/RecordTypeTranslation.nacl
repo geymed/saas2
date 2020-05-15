@@ -1,0 +1,16 @@
+type salesforce.RecordTypeTranslation {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  string description {
+    _required = false
+  }
+  string label {
+    _required = false
+  }
+  string name {
+    _required = false
+  }
+  metadataType = "RecordTypeTranslation"
+}

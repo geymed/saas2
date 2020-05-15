@@ -1,0 +1,22 @@
+type salesforce.AppBrand {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  string footerColor {
+    _required = false
+  }
+  string headerColor {
+    _required = false
+  }
+  string logo {
+    _required = false
+  }
+  number logoVersion {
+    _required = false
+  }
+  boolean shouldOverrideOrgTheme {
+    _required = false
+  }
+  metadataType = "AppBrand"
+}

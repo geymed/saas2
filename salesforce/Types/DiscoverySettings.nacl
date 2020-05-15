@@ -1,0 +1,10 @@
+settings salesforce.DiscoverySettings {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  serviceid fullName {
+    _required = false
+  }
+  metadataType = "DiscoverySettings"
+}

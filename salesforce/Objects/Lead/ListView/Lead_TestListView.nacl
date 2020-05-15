@@ -1,0 +1,13 @@
+salesforce.ListView Lead_TestListView {
+  fullName = "Lead.TestListView"
+  filterScope = "Everything"
+  filters = [
+      {
+        field = "LEAD.STATUS"
+        operation = "equals"
+        value = "closed"
+      },
+  ]
+  label = "E2E Fetch ListView"
+  _parent = salesforce.Lead
+}

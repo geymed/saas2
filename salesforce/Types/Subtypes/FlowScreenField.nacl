@@ -1,0 +1,83 @@
+type salesforce.FlowScreenField {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  string choiceReferences {
+    _required = false
+  }
+  string defaultSelectedChoiceReference {
+    _required = false
+  }
+  salesforce.FlowElementReferenceOrValue defaultValue {
+    _required = false
+  }
+  string description {
+    _required = false
+  }
+  string extensionName {
+    _required = false
+  }
+  string fieldText {
+    _required = false
+  }
+  string helpText {
+    _required = false
+  }
+  salesforce.FlowScreenFieldInputParameter inputParameters {
+    _required = false
+  }
+  boolean isRequired {
+    _required = false
+  }
+  boolean isVisible {
+    _required = false
+  }
+  string name {
+    _required = false
+  }
+  salesforce.FlowScreenFieldOutputParameter outputParameters {
+    _required = false
+  }
+  salesforce.FlowMetadataValue processMetadataValues {
+    _required = false
+  }
+  number scale {
+    _required = false
+  }
+  boolean storeOutputAutomatically {
+    _required = false
+  }
+  salesforce.FlowInputValidationRule validationRule {
+    _required = false
+  }
+  salesforce.FlowVisibilityRule visibilityRule {
+    _required = false
+  }
+  string dataType {
+    _values = [
+        "Boolean",
+        "Currency",
+        "Date",
+        "DateTime",
+        "Number",
+        "String",
+    ]
+  }
+  string fieldType {
+    _values = [
+        "DisplayText",
+        "InputField",
+        "LargeTextArea",
+        "PasswordField",
+        "RadioButtons",
+        "DropdownBox",
+        "MultiSelectCheckboxes",
+        "MultiSelectPicklist",
+        "ComponentInstance",
+        "ComponentChoice",
+        "ComponentInput",
+    ]
+  }
+  metadataType = "FlowScreenField"
+}

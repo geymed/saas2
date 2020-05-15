@@ -1,0 +1,13 @@
+type salesforce.AssignmentRules {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  "List<salesforce.AssignmentRule>" assignmentRule {
+    _required = false
+  }
+  serviceid fullName {
+    _required = false
+  }
+  metadataType = "AssignmentRules"
+}

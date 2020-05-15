@@ -1,0 +1,16 @@
+type salesforce.WebToCaseSettings {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  string caseOrigin {
+    _required = false
+  }
+  string defaultResponseTemplate {
+    _required = false
+  }
+  boolean enableWebToCase {
+    _required = false
+  }
+  metadataType = "WebToCaseSettings"
+}

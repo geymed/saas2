@@ -1,0 +1,10 @@
+type salesforce.ChannelLayoutItem {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  string field {
+    _required = false
+  }
+  metadataType = "ChannelLayoutItem"
+}

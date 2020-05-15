@@ -1,0 +1,16 @@
+type salesforce.FlowWaitEventInputParameter {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  string name {
+    _required = false
+  }
+  salesforce.FlowMetadataValue processMetadataValues {
+    _required = false
+  }
+  salesforce.FlowElementReferenceOrValue value {
+    _required = false
+  }
+  metadataType = "FlowWaitEventInputParameter"
+}

@@ -1,0 +1,16 @@
+type salesforce.FlowWaitEventOutputParameter {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  string assignToReference {
+    _required = false
+  }
+  string name {
+    _required = false
+  }
+  salesforce.FlowMetadataValue processMetadataValues {
+    _required = false
+  }
+  metadataType = "FlowWaitEventOutputParameter"
+}

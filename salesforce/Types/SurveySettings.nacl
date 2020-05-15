@@ -1,0 +1,14 @@
+settings salesforce.SurveySettings {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  serviceid fullName {
+    _required = false
+  }
+  boolean enableSurveys {
+  }
+  boolean enableSurveyOwnerCanManageResponse {
+  }
+  metadataType = "SurveySettings"
+}

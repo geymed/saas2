@@ -1,0 +1,25 @@
+salesforce.CustomObjectTranslation TestModifyCustom__c_en_US {
+  fullName = "TestModifyCustom__c-en_US"
+  caseValues = [
+      {
+        plural = false
+        value = "test label"
+      },
+      {
+        plural = true
+        value = "test labels"
+      },
+  ]
+  fields = [
+      {
+        name = "Banana__c"
+      },
+      {
+        name = "description__c"
+      },
+  ]
+  startsWith = "Consonant"
+  _parent = [
+      salesforce.TestModifyCustom__c,
+  ]
+}

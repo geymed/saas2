@@ -1,0 +1,16 @@
+type salesforce.ProfileFieldLevelSecurity {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  boolean editable {
+    _required = false
+  }
+  string field {
+    _required = false
+  }
+  boolean readable {
+    _required = false
+  }
+  metadataType = "ProfileFieldLevelSecurity"
+}

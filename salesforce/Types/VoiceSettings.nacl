@@ -1,0 +1,26 @@
+settings salesforce.VoiceSettings {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  serviceid fullName {
+    _required = false
+  }
+  boolean enableCallDisposition {
+  }
+  boolean enableVoiceCallList {
+  }
+  boolean enableVoiceCallRecording {
+  }
+  boolean enableVoiceCoaching {
+  }
+  boolean enableVoiceConferencing {
+  }
+  boolean enableVoiceLocalPresence {
+  }
+  boolean enableVoiceMail {
+  }
+  boolean enableVoiceMailDrop {
+  }
+  metadataType = "VoiceSettings"
+}

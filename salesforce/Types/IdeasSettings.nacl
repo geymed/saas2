@@ -1,0 +1,37 @@
+settings salesforce.IdeasSettings {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  serviceid fullName {
+    _required = false
+  }
+  boolean enableChatterProfile {
+    _required = false
+  }
+  boolean enableHtmlIdea {
+    _required = false
+  }
+  boolean enableIdeaMultipleCategory {
+    _required = false
+  }
+  boolean enableIdeaThemes {
+    _required = false
+  }
+  boolean enableIdeas {
+    _required = false
+  }
+  boolean enableIdeasControllerExtensions {
+    _required = false
+  }
+  boolean enableIdeasReputation {
+    _required = false
+  }
+  number halfLife {
+    _required = false
+  }
+  string ideasProfilePage {
+    _required = false
+  }
+  metadataType = "IdeasSettings"
+}

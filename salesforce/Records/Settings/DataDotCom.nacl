@@ -1,0 +1,10 @@
+salesforce.DataDotComSettings {
+  fullName = "DataDotCom"
+  enableAccountExportButtonOff = false
+  enableAccountImportButtonOff = false
+  enableAllowDupeContactFromLead = false
+  enableAllowDupeLeadFromContact = false
+  enableCleanUpgradeRequested = false
+  enableContactExportButtonOff = false
+  enableContactImportButtonOff = false
+}

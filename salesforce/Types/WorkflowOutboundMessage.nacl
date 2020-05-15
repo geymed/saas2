@@ -1,0 +1,37 @@
+type salesforce.WorkflowOutboundMessage {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  number apiVersion {
+    _required = false
+  }
+  string description {
+    _required = false
+  }
+  string endpointUrl {
+    _required = false
+  }
+  "List<string>" fields {
+    _required = false
+  }
+  serviceid fullName {
+    _required = false
+  }
+  boolean includeSessionId {
+    _required = false
+  }
+  string integrationUser {
+    _required = false
+  }
+  string name {
+    _required = false
+  }
+  boolean protected {
+    _required = false
+  }
+  boolean useDeadLetterQueue {
+    _required = false
+  }
+  metadataType = "WorkflowOutboundMessage"
+}

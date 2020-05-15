@@ -1,0 +1,10 @@
+settings salesforce.ExternalServicesSettings {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  serviceid fullName {
+    _required = false
+  }
+  metadataType = "ExternalServicesSettings"
+}

@@ -1,0 +1,16 @@
+settings salesforce.PartyDataModelSettings {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  serviceid fullName {
+    _required = false
+  }
+  boolean enableAutoSelectIndividualOnMerge {
+  }
+  boolean enableConsentManagementEnabled {
+  }
+  boolean enableIndividualAutoCreate {
+  }
+  metadataType = "PartyDataModelSettings"
+}

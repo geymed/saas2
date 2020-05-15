@@ -1,0 +1,13 @@
+type salesforce.NextAutomatedApprover {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  boolean useApproverFieldOfRecordOwner {
+    _required = false
+  }
+  string userHierarchyField {
+    _required = false
+  }
+  metadataType = "NextAutomatedApprover"
+}

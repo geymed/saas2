@@ -1,0 +1,16 @@
+type salesforce.Group {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  boolean doesIncludeBosses {
+    _required = false
+  }
+  serviceid fullName {
+    _required = false
+  }
+  string name {
+    _required = false
+  }
+  metadataType = "Group"
+}

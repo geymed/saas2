@@ -1,0 +1,28 @@
+type salesforce.RecordType {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  serviceid fullName {
+    _required = false
+  }
+  boolean active {
+    _required = false
+  }
+  string businessProcess {
+    _required = false
+  }
+  string compactLayoutAssignment {
+    _required = false
+  }
+  string description {
+    _required = false
+  }
+  string label {
+    _required = false
+  }
+  "List<salesforce.RecordTypePicklistValue>" picklistValues {
+    _required = false
+  }
+  metadataType = "RecordType"
+}

@@ -1,0 +1,251 @@
+type salesforce.TestFields__c {
+  salesforce.Percent India__c {
+    apiName = "TestFields__c.India__c"
+    label = "Percent label Updated"
+    _required = false
+    inlineHelpText = "Percent help updated"
+    scale = 7
+    precision = 8
+    description = "Percent description Updated"
+  }
+  salesforce.Html Lima__c {
+    apiName = "TestFields__c.Lima__c"
+    label = "RichTextArea label Updated"
+    _required = false
+    inlineHelpText = "RichTextArea help updated"
+    length = 32000
+    visibleLines = 10
+  }
+  salesforce.Url Oscar__c {
+    apiName = "TestFields__c.Oscar__c"
+    label = "Url label Updated"
+    _required = true
+    inlineHelpText = "Url help updated"
+    description = "Url description Updated"
+  }
+  salesforce.AutoNumber Bravo__c {
+    apiName = "TestFields__c.Bravo__c"
+    label = "AutoNumber label Updated"
+    _required = true
+    description = "AutoNumber description Updated"
+    displayFormat = "QQQ-{0000}"
+    externalId = false
+  }
+  salesforce.Text Sierra__c {
+    apiName = "TestFields__c.Sierra__c"
+    label = "Text label Updated"
+    _required = false
+    unique = true
+    caseSensitive = true
+    length = 99
+    externalId = false
+  }
+  salesforce.Checkbox Tango__c {
+    apiName = "TestFields__c.Tango__c"
+    label = "Checkbox label Updated"
+    defaultValue = false
+    inlineHelpText = "Checkbox help updated"
+    description = "Checkbox description Updated"
+  }
+  salesforce.EncryptedText November__c {
+    apiName = "TestFields__c.November__c"
+    label = "EncryptedText label Updated"
+    _required = true
+    inlineHelpText = "EncryptedText help updated"
+    maskType = "ssn"
+    length = 100
+    description = "EncryptedText description Updated"
+    maskChar = "X"
+  }
+  salesforce.MasterDetail Romeo7306162__c {
+    apiName = "TestFields__c.Romeo7306162__c"
+    label = "MasterDetail label Updated"
+    _required = false
+    writeRequiresMasterRead = false
+    reparentableMasterDetail = false
+    referenceTo = [
+        "Case",
+    ]
+    inlineHelpText = "MasterDetail help updated"
+    relationshipOrder = 0
+    description = "MasterDetail description Updated"
+  }
+  salesforce.Time Delta__c {
+    apiName = "TestFields__c.Delta__c"
+    label = "Time label Updated"
+    _required = false
+  }
+  salesforce.DateTime Echo__c {
+    apiName = "TestFields__c.Echo__c"
+    label = "DateTime label Updated"
+    _required = false
+    inlineHelpText = "DateTime help updated"
+    businessStatus = "Hidden"
+    complianceGroup = "GDPR"
+    description = "DateTime description Updated"
+    securityClassification = "Restricted"
+  }
+  salesforce.Location Golf__c {
+    apiName = "TestFields__c.Golf__c"
+    label = "Location label Updated"
+    _required = true
+    scale = 10
+    businessStatus = "Active"
+    displayLocationInDecimal = false
+  }
+  salesforce.LongTextArea Kilo__c {
+    apiName = "TestFields__c.Kilo__c"
+    label = "LongTextArea label Updated"
+    _required = false
+    length = 32000
+    description = "LongTextArea description Updated"
+    visibleLines = 4
+  }
+  salesforce.TextArea Mike__c {
+    apiName = "TestFields__c.Mike__c"
+    label = "TextArea label Updated"
+    _required = true
+    inlineHelpText = "TextArea help updated"
+    description = "TextArea description Updated"
+  }
+  salesforce.Date Charlie__c {
+    apiName = "TestFields__c.Charlie__c"
+    label = "Date label Updated"
+    _required = true
+    description = "Date description Updated"
+  }
+  salesforce.Number Papa__c {
+    apiName = "TestFields__c.Papa__c"
+    label = "Number label Updated"
+    _required = true
+    precision = 9
+    scale = 6
+    inlineHelpText = "Number help updated"
+    unique = false
+    externalId = true
+    description = "Number description Updated"
+  }
+  salesforce.Picklist Uniform__c {
+    apiName = "TestFields__c.Uniform__c"
+    label = "GlobalPicklist label Updated"
+    _required = true
+    restricted = true
+    inlineHelpText = "GlobalPicklist help updated"
+    description = "GlobalPicklist description Updated"
+    valueSetName = salesforce.GlobalValueSet.instance.TestGlobalValueSet
+  }
+  salesforce.Lookup Quebec7306162__c {
+    apiName = "TestFields__c.Quebec7306162__c"
+    label = "Lookup label Updated"
+    _required = false
+    allowLookupRecordDeletion = true
+    referenceTo = [
+        "Opportunity",
+    ]
+    inlineHelpText = "Lookup help updated"
+    description = "Lookup description Updated"
+    lookupFilter = {
+        active = false
+        booleanFilter = "1"
+        errorMessage = "Updated error message"
+        filterItems = [
+            {
+              field = "Opportunity.NextStep"
+              operation = "equals"
+              value = "NextStepValueUpdated"
+            },
+        ]
+        infoMessage = "Updated info message"
+        isOptional = false
+    }
+  }
+  salesforce.Email Foxtrot__c {
+    apiName = "TestFields__c.Foxtrot__c"
+    label = "Email label Updated"
+    _required = false
+    unique = false
+    externalId = false
+  }
+  salesforce.Phone Juliett__c {
+    apiName = "TestFields__c.Juliett__c"
+    label = "Phone label Updated"
+    _required = false
+  }
+  salesforce.FormulaCheckbox Whiskey__c {
+    apiName = "TestFields__c.Whiskey__c"
+    label = "Formula label Updated"
+    formula = "3 > 9"
+    inlineHelpText = "Formula help updated"
+    businessStatus = "Active"
+    description = "Formula description Updated"
+    securityClassification = "MissionCritical"
+  }
+  salesforce.Picklist Pickle__c {
+    apiName = "TestFields__c.Pickle__c"
+    label = "Picklist label Updated"
+    _required = true
+    valueSet = [
+        {
+          fullName = "NEWER"
+          color = "#FFFF00"
+          default = false
+          label = "NEWER"
+        },
+        {
+          fullName = "OLDER"
+          color = "#FFFFFF"
+          default = true
+          label = "OLDER"
+        },
+    ]
+    restricted = false
+    inlineHelpText = "Picklist help updated"
+    description = "Picklist description Updated"
+    sorted = false
+  }
+  salesforce.Currency Alpha__c {
+    apiName = "TestFields__c.Alpha__c"
+    label = "Currency label Updated"
+    _required = true
+    defaultValueFormula = "24"
+    inlineHelpText = "Currency help updated"
+    scale = 4
+    precision = 17
+    description = "Currency description Updated"
+  }
+  salesforce.MultiselectPicklist Hotel__c {
+    apiName = "TestFields__c.Hotel__c"
+    label = "Multipicklist label Updated"
+    _required = true
+    valueSet = [
+        {
+          fullName = "DO_UPDATED"
+          color = "#FFFFFF"
+          default = false
+          label = "DO_UPDATED"
+        },
+        {
+          fullName = "RE_UPDATED"
+          color = "#00000F"
+          default = true
+          label = "RE_UPDATED"
+        },
+        {
+          fullName = "DO"
+          default = false
+          isActive = false
+          label = "DO"
+        },
+        {
+          fullName = "RE"
+          default = false
+          isActive = false
+          label = "RE"
+        },
+    ]
+    restricted = true
+    visibleLines = 6
+    description = "Multipicklist description Updated"
+    sorted = false
+  }
+}

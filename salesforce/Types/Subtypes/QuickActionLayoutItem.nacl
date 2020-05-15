@@ -1,0 +1,13 @@
+type salesforce.QuickActionLayoutItem {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  boolean emptySpace {
+    _required = false
+  }
+  string field {
+    _required = false
+  }
+  metadataType = "QuickActionLayoutItem"
+}

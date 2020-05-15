@@ -1,0 +1,51 @@
+type salesforce.FlowVariable {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  string apexClass {
+    _required = false
+  }
+  string description {
+    _required = false
+  }
+  boolean isCollection {
+    _required = false
+  }
+  boolean isInput {
+    _required = false
+  }
+  boolean isOutput {
+    _required = false
+  }
+  string name {
+    _required = false
+  }
+  string objectType {
+    _required = false
+  }
+  salesforce.FlowMetadataValue processMetadataValues {
+    _required = false
+  }
+  number scale {
+    _required = false
+  }
+  salesforce.FlowElementReferenceOrValue value {
+    _required = false
+  }
+  string dataType {
+    _values = [
+        "Apex",
+        "Boolean",
+        "Currency",
+        "Date",
+        "DateTime",
+        "Number",
+        "Multipicklist",
+        "Picklist",
+        "String",
+        "SObject",
+    ]
+  }
+  metadataType = "FlowVariable"
+}

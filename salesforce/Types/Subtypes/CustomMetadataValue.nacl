@@ -1,0 +1,13 @@
+type salesforce.CustomMetadataValue {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  string field {
+    _required = false
+  }
+  string value {
+    _required = false
+  }
+  metadataType = "CustomMetadataValue"
+}

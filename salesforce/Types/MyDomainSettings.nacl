@@ -1,0 +1,22 @@
+settings salesforce.MyDomainSettings {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  serviceid fullName {
+    _required = false
+  }
+  boolean canOnlyLoginWithMyDomainUrl {
+  }
+  boolean doesApiLoginRequireOrgDomain {
+  }
+  boolean enableNativeBrowserForAuthOnAndroid {
+  }
+  boolean enableNativeBrowserForAuthOnIos {
+  }
+  boolean useStabilizedMyDomainHostnames {
+  }
+  boolean useStabilizedSandboxMyDomainHostnames {
+  }
+  metadataType = "MyDomainSettings"
+}

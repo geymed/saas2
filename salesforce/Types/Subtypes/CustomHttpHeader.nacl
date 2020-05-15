@@ -1,0 +1,19 @@
+type salesforce.CustomHttpHeader {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  string description {
+    _required = false
+  }
+  string headerFieldName {
+    _required = false
+  }
+  string headerFieldValue {
+    _required = false
+  }
+  boolean isActive {
+    _required = false
+  }
+  metadataType = "CustomHttpHeader"
+}

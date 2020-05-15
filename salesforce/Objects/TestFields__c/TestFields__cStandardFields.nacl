@@ -1,0 +1,53 @@
+type salesforce.TestFields__c {
+  salesforce.Text Id {
+    apiName = "TestFields__c.Id"
+    label = "Record ID"
+    _required = true
+    unique = false
+    caseSensitive = false
+    length = 18
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "TestFields__c.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+  }
+  salesforce.Name Name {
+    apiName = "TestFields__c.Name"
+    label = "Name"
+    _required = false
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "TestFields__c.CreatedDate"
+    label = "Created Date"
+    _required = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "TestFields__c.CreatedById"
+    label = "Created By ID"
+    _required = true
+    allowLookupRecordDeletion = true
+    referenceTo = [
+        "User",
+    ]
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "TestFields__c.LastModifiedDate"
+    label = "Last Modified Date"
+    _required = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "TestFields__c.LastModifiedById"
+    label = "Last Modified By ID"
+    _required = true
+    allowLookupRecordDeletion = true
+    referenceTo = [
+        "User",
+    ]
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "TestFields__c.SystemModstamp"
+    label = "System Modstamp"
+    _required = true
+  }
+}

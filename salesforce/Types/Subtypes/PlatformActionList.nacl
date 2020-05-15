@@ -1,0 +1,44 @@
+type salesforce.PlatformActionList {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  serviceid fullName {
+    _required = false
+  }
+  string actionListContext {
+    _required = false
+    _restriction = {
+        enforce_value = false
+        values = [
+            "ActionDefinition",
+            "Assistant",
+            "BannerPhoto",
+            "Chatter",
+            "Dockable",
+            "FeedElement",
+            "Flexipage",
+            "Global",
+            "ListView",
+            "ListViewDefinition",
+            "ListViewRecord",
+            "Lookup",
+            "MruList",
+            "MruRow",
+            "ObjectHomeChart",
+            "Photo",
+            "Record",
+            "RecordEdit",
+            "RelatedList",
+            "RelatedListRecord",
+        ]
+    }
+  }
+  "List<salesforce.PlatformActionListItem>" platformActionListItems {
+    _required = false
+  }
+  string relatedSourceEntity {
+    _required = false
+  }
+  metadataType = "PlatformActionList"
+}

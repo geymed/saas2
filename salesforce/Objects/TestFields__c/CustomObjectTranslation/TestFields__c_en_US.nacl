@@ -1,0 +1,104 @@
+salesforce.CustomObjectTranslation TestFields__c_en_US {
+  fullName = "TestFields__c-en_US"
+  caseValues = [
+      {
+        plural = false
+        value = "test object with various field types"
+      },
+      {
+        plural = true
+        value = "test object with various field typess"
+      },
+  ]
+  fields = [
+      {
+        name = "Alpha__c"
+      },
+      {
+        name = "Bravo__c"
+      },
+      {
+        name = "Charlie__c"
+      },
+      {
+        name = "Delta__c"
+      },
+      {
+        name = "Echo__c"
+      },
+      {
+        name = "Foxtrot__c"
+      },
+      {
+        name = "Golf__c"
+      },
+      {
+        name = "Hotel__c"
+        picklistValues = [
+            {
+              masterLabel = "DO_UPDATED"
+            },
+            {
+              masterLabel = "RE_UPDATED"
+            },
+        ]
+      },
+      {
+        name = "India__c"
+      },
+      {
+        name = "Juliett__c"
+      },
+      {
+        name = "Kilo__c"
+      },
+      {
+        name = "Lima__c"
+      },
+      {
+        name = "Mike__c"
+      },
+      {
+        name = "November__c"
+      },
+      {
+        name = "Oscar__c"
+      },
+      {
+        name = "Papa__c"
+      },
+      {
+        name = "Pickle__c"
+        picklistValues = [
+            {
+              masterLabel = "NEWER"
+            },
+            {
+              masterLabel = "OLDER"
+            },
+        ]
+      },
+      {
+        name = "Quebec7306162__c"
+      },
+      {
+        name = "Romeo7306162__c"
+      },
+      {
+        name = "Sierra__c"
+      },
+      {
+        name = "Tango__c"
+      },
+      {
+        name = "Uniform__c"
+      },
+      {
+        name = "Whiskey__c"
+      },
+  ]
+  startsWith = "Consonant"
+  _parent = [
+      salesforce.TestFields__c,
+  ]
+}

@@ -1,0 +1,12 @@
+workspace {
+  uid = "2527f62d-1451-4f50-a517-79044a437386"
+  name = "vanilla25"
+  envs = [
+      {
+        name = "env1"
+        services = [
+            "salesforce",
+        ]
+      },
+  ]
+}

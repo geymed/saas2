@@ -1,0 +1,421 @@
+type salesforce.Macro {
+  salesforce.Text Id {
+    apiName = "Macro.Id"
+    label = "Macro ID"
+    _required = true
+    unique = false
+    caseSensitive = false
+    length = 18
+  }
+  salesforce.Lookup OwnerId {
+    apiName = "Macro.OwnerId"
+    label = "Owner ID"
+    _required = true
+    allowLookupRecordDeletion = true
+    referenceTo = [
+        "Group",
+        "User",
+    ]
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "Macro.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+  }
+  salesforce.Name Name {
+    apiName = "Macro.Name"
+    label = "Macro Name"
+    _required = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "Macro.CreatedDate"
+    label = "Created Date"
+    _required = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "Macro.CreatedById"
+    label = "Created By ID"
+    _required = true
+    allowLookupRecordDeletion = true
+    referenceTo = [
+        "User",
+    ]
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "Macro.LastModifiedDate"
+    label = "Last Modified Date"
+    _required = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "Macro.LastModifiedById"
+    label = "Last Modified By ID"
+    _required = true
+    allowLookupRecordDeletion = true
+    referenceTo = [
+        "User",
+    ]
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "Macro.SystemModstamp"
+    label = "System Modstamp"
+    _required = true
+  }
+  salesforce.DateTime LastViewedDate {
+    apiName = "Macro.LastViewedDate"
+    label = "Last Viewed Date"
+    _required = false
+  }
+  salesforce.DateTime LastReferencedDate {
+    apiName = "Macro.LastReferencedDate"
+    label = "Last Referenced Date"
+    _required = false
+  }
+  salesforce.Html Description {
+    apiName = "Macro.Description"
+    label = "Description"
+    _required = false
+    length = 4096
+  }
+  salesforce.Checkbox IsAlohaSupported {
+    apiName = "Macro.IsAlohaSupported"
+    label = "Supports Classic"
+    defaultValue = false
+  }
+  salesforce.Checkbox IsLightningSupported {
+    apiName = "Macro.IsLightningSupported"
+    label = "Supports Lightning"
+    defaultValue = false
+  }
+  salesforce.Picklist StartingContext {
+    apiName = "Macro.StartingContext"
+    label = "Apply To"
+    _required = false
+    valueSet = [
+        {
+          fullName = "Account"
+          default = false
+          label = "Account"
+          isActive = true
+        },
+        {
+          fullName = "Asset"
+          default = false
+          label = "Asset"
+          isActive = true
+        },
+        {
+          fullName = "AssetRelationship"
+          default = false
+          label = "Asset Relationship"
+          isActive = true
+        },
+        {
+          fullName = "Campaign"
+          default = false
+          label = "Campaign"
+          isActive = true
+        },
+        {
+          fullName = "Case"
+          default = false
+          label = "Case"
+          isActive = true
+        },
+        {
+          fullName = "CommSubscription"
+          default = false
+          label = "Communication Subscription"
+          isActive = true
+        },
+        {
+          fullName = "CommSubscriptionChannelType"
+          default = false
+          label = "Communication Subscription Channel Type"
+          isActive = true
+        },
+        {
+          fullName = "CommSubscriptionConsent"
+          default = false
+          label = "Communication Subscription Consent"
+          isActive = true
+        },
+        {
+          fullName = "CommSubscriptionTiming"
+          default = false
+          label = "Communication Subscription Timing"
+          isActive = true
+        },
+        {
+          fullName = "ConsumptionSchedule"
+          default = false
+          label = "Consumption Schedule"
+          isActive = true
+        },
+        {
+          fullName = "Contact"
+          default = false
+          label = "Contact"
+          isActive = true
+        },
+        {
+          fullName = "Contract"
+          default = false
+          label = "Contract"
+          isActive = true
+        },
+        {
+          fullName = "CustomHd__c"
+          default = false
+          label = "CustomHd"
+          isActive = true
+        },
+        {
+          fullName = "CustomHd3__c"
+          default = false
+          label = "CustomHd3"
+          isActive = true
+        },
+        {
+          fullName = "CustomHd4__c"
+          default = false
+          label = "CustomHd4"
+          isActive = true
+        },
+        {
+          fullName = "CustomTest__c"
+          default = false
+          label = "CustomTest__c"
+          isActive = true
+        },
+        {
+          fullName = "CustomTest10__c"
+          default = false
+          label = "CustomTest10"
+          isActive = true
+        },
+        {
+          fullName = "CustomTest11__c"
+          default = false
+          label = "CustomTest11"
+          isActive = true
+        },
+        {
+          fullName = "CustomTest12__c"
+          default = false
+          label = "CustomTest12"
+          isActive = true
+        },
+        {
+          fullName = "CustomTest2__c"
+          default = false
+          label = "CustomTest2__c"
+          isActive = true
+        },
+        {
+          fullName = "CustomTest21__c"
+          default = false
+          label = "CustomTest21"
+          isActive = true
+        },
+        {
+          fullName = "CustomTest22__c"
+          default = false
+          label = "CustomTest22"
+          isActive = true
+        },
+        {
+          fullName = "CustomTest23__c"
+          default = false
+          label = "CustomTest23"
+          isActive = true
+        },
+        {
+          fullName = "CustomTest24__c"
+          default = false
+          label = "CustomTest24"
+          isActive = true
+        },
+        {
+          fullName = "CustomTest3__c"
+          default = false
+          label = "CustomTest3__c"
+          isActive = true
+        },
+        {
+          fullName = "CustomTest5__c"
+          default = false
+          label = "CustomTest5__c"
+          isActive = true
+        },
+        {
+          fullName = "CustomTest6__c"
+          default = false
+          label = "CustomTest6__c"
+          isActive = true
+        },
+        {
+          fullName = "E2etest__c"
+          default = false
+          label = "E2etest"
+          isActive = true
+        },
+        {
+          fullName = "EngagementChannelType"
+          default = false
+          label = "Engagement Channel Type"
+          isActive = true
+        },
+        {
+          fullName = "Event"
+          default = false
+          label = "Event"
+          isActive = true
+        },
+        {
+          fullName = "FeedItem"
+          default = false
+          label = "Feed Item"
+          isActive = true
+        },
+        {
+          fullName = "CollaborationGroup"
+          default = false
+          label = "Group"
+          isActive = true
+        },
+        {
+          fullName = "Individual"
+          default = false
+          label = "Individual"
+          isActive = true
+        },
+        {
+          fullName = "Lead"
+          default = false
+          label = "Lead"
+          isActive = true
+        },
+        {
+          fullName = "MessagingSession"
+          default = false
+          label = "Messaging Session"
+          isActive = true
+        },
+        {
+          fullName = "MessagingEndUser"
+          default = false
+          label = "Messaging User"
+          isActive = true
+        },
+        {
+          fullName = "new__c"
+          default = false
+          label = "new"
+          isActive = true
+        },
+        {
+          fullName = "New2__c"
+          default = false
+          label = "New2"
+          isActive = true
+        },
+        {
+          fullName = "NewCustom__c"
+          default = false
+          label = "NewCustom"
+          isActive = true
+        },
+        {
+          fullName = "TestModifyFieldAndAnnotation__c"
+          default = false
+          label = "Object Updated Label"
+          isActive = true
+        },
+        {
+          fullName = "Opportunity"
+          default = false
+          label = "Opportunity"
+          isActive = true
+        },
+        {
+          fullName = "OpportunityContactRole"
+          default = false
+          label = "Opportunity Contact Role"
+          isActive = true
+        },
+        {
+          fullName = "Order"
+          default = false
+          label = "Order"
+          isActive = true
+        },
+        {
+          fullName = "PartyConsent"
+          default = false
+          label = "Party Consent"
+          isActive = true
+        },
+        {
+          fullName = "Product2"
+          default = false
+          label = "Product"
+          isActive = true
+        },
+        {
+          fullName = "Task"
+          default = false
+          label = "Task"
+          isActive = true
+        },
+        {
+          fullName = "TestAddFields__c"
+          default = false
+          label = "test add object with field types"
+          isActive = true
+        },
+        {
+          fullName = "TestModifyObjectPermissions__c"
+          default = false
+          label = "test label"
+          isActive = true
+        },
+        {
+          fullName = "TestAddElementTopicsForObjects__c"
+          default = false
+          label = "test label"
+          isActive = true
+        },
+        {
+          fullName = "TestAddDefaultTopicsForObjects__c"
+          default = false
+          label = "test label"
+          isActive = true
+        },
+        {
+          fullName = "TestModifyCustom__c"
+          default = false
+          label = "test label"
+          isActive = true
+        },
+        {
+          fullName = "TestModifyCustomAnnotations__c"
+          default = false
+          label = "test label 2"
+          isActive = true
+        },
+        {
+          fullName = "TestFields__c"
+          default = false
+          label = "test object with various field types"
+          isActive = true
+        },
+        {
+          fullName = "User"
+          default = false
+          label = "User"
+          isActive = true
+        },
+    ]
+    restricted = true
+  }
+}

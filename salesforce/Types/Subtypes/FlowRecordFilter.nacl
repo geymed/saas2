@@ -1,0 +1,30 @@
+type salesforce.FlowRecordFilter {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  "List<salesforce.FlowMetadataValue>" processMetadataValues {
+    _required = false
+  }
+  string field {
+    _required = false
+  }
+  salesforce.FlowElementReferenceOrValue value {
+    _required = false
+  }
+  string operator {
+    _values = [
+        "EqualTo",
+        "NotEqualTo",
+        "GreaterThan",
+        "LessThan",
+        "GreaterThanOrEqualTo",
+        "LessThanOrEqualTo",
+        "StartsWith",
+        "EndsWith",
+        "Contains",
+        "IsNull",
+    ]
+  }
+  metadataType = "FlowRecordFilter"
+}

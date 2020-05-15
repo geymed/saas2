@@ -1,0 +1,21 @@
+salesforce.WebLink Lead_TestWebLink {
+  fullName = "Lead.TestWebLink"
+  availability = "online"
+  description = "WebLink that should be fetched in e2e test"
+  displayType = "button"
+  encodingKey = "UTF-8"
+  hasMenubar = false
+  hasScrollbars = true
+  hasToolbar = false
+  height = 600
+  isResizable = true
+  linkType = "url"
+  masterLabel = "E2E Fetch WebLink"
+  openType = "newWindow"
+  position = "none"
+  protected = false
+  showsLocation = false
+  showsStatus = false
+  url = "{!Lead.CreatedBy} = \"MyName\""
+  _parent = salesforce.Lead
+}

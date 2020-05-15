@@ -1,0 +1,8 @@
+salesforce.ValidationRule Lead_TestValidationRule {
+  fullName = "Lead.TestValidationRule"
+  active = true
+  description = "ValidationRule that should be fetched in e2e test"
+  errorConditionFormula = "false"
+  errorMessage = "Error Message!"
+  _parent = salesforce.Lead
+}

@@ -1,0 +1,4 @@
+type salesforce.ObjectLinkingSettings {
+  boolean enableObjectLinking {
+  }
+}

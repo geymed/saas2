@@ -1,0 +1,21 @@
+settings salesforce.CurrencySettings {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  boolean enableMultiCurrency {
+    _required = false
+  }
+  serviceid fullName {
+    _required = false
+  }
+  boolean enableCurrencyEffectiveDates {
+  }
+  boolean enableCurrencySymbolWithMultiCurrency {
+  }
+  boolean isMultiCurrencyActivationAllowed {
+  }
+  boolean isParenCurrencyConvDisabled {
+  }
+  metadataType = "CurrencySettings"
+}

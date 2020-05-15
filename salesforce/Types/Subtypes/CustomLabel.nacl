@@ -1,0 +1,48 @@
+type salesforce.CustomLabel {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  serviceid fullName {
+    _required = false
+  }
+  string categories {
+    _required = false
+  }
+  string language {
+    _required = false
+    _restriction = {
+        enforce_value = false
+        values = [
+            "da",
+            "de",
+            "en_US",
+            "es",
+            "es_MX",
+            "fi",
+            "fr",
+            "it",
+            "ja",
+            "ko",
+            "nl_NL",
+            "no",
+            "pt_BR",
+            "ru",
+            "sv",
+            "th",
+            "zh_CN",
+            "zh_TW",
+        ]
+    }
+  }
+  boolean protected {
+    _required = false
+  }
+  string shortDescription {
+    _required = false
+  }
+  string value {
+    _required = false
+  }
+  metadataType = "CustomLabel"
+}

@@ -1,0 +1,30 @@
+salesforce.CustomObjectTranslation CustomHd__c_en_US {
+  fullName = "CustomHd__c-en_US"
+  caseValues = [
+      {
+        plural = false
+        value = "CustomHd"
+      },
+      {
+        plural = true
+        value = "CustomHds"
+      },
+  ]
+  fields = [
+      {
+        name = "Test__c"
+        picklistValues = [
+            {
+              masterLabel = "BLA"
+            },
+        ]
+      },
+      {
+        name = "temp__c"
+      },
+  ]
+  startsWith = "Consonant"
+  _parent = [
+      salesforce.CustomHd__c,
+  ]
+}

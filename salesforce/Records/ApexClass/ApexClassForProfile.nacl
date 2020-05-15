@@ -1,0 +1,6 @@
+salesforce.ApexClass ApexClassForProfile {
+  apiVersion = 47
+  status = "Active"
+  fullName = "ApexClassForProfile"
+  content = "public class ApexClassForProfile {\n    public void printLog() {\n        System.debug('Created');\n    }\n}"
+}

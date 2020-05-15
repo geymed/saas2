@@ -1,0 +1,13 @@
+type salesforce.LetterheadLine {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  string color {
+    _required = false
+  }
+  number height {
+    _required = false
+  }
+  metadataType = "LetterheadLine"
+}

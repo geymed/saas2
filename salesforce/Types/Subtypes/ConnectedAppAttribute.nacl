@@ -1,0 +1,13 @@
+type salesforce.ConnectedAppAttribute {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  string formula {
+    _required = false
+  }
+  string key {
+    _required = false
+  }
+  metadataType = "ConnectedAppAttribute"
+}

@@ -1,0 +1,13 @@
+type salesforce.ProfileExternalDataSourceAccess {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  boolean enabled {
+    _required = false
+  }
+  string externalDataSource {
+    _required = false
+  }
+  metadataType = "ProfileExternalDataSourceAccess"
+}

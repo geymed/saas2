@@ -1,0 +1,28 @@
+type salesforce.FlowConstant {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  string description {
+    _required = false
+  }
+  string name {
+    _required = false
+  }
+  salesforce.FlowMetadataValue processMetadataValues {
+    _required = false
+  }
+  salesforce.FlowElementReferenceOrValue value {
+    _required = false
+  }
+  string dataType {
+    _values = [
+        "Boolean",
+        "Currency",
+        "Date",
+        "Number",
+        "String",
+    ]
+  }
+  metadataType = "FlowConstant"
+}

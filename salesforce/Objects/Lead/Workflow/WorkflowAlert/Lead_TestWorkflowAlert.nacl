@@ -1,0 +1,16 @@
+salesforce.WorkflowAlert Lead_TestWorkflowAlert {
+  fullName = "Lead.TestWorkflowAlert"
+  description = "E2E Fetch WorkflowAlert"
+  protected = false
+  recipients = [
+      {
+        recipient = salesforce.Role.instance.CEO
+        type = "role"
+      },
+  ]
+  senderType = "CurrentUser"
+  template = salesforce.EmailTemplate.instance.unfiled_public_SupportCaseResponse
+  _parent = [
+      salesforce.Lead,
+  ]
+}

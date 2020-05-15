@@ -1,0 +1,10 @@
+type salesforce.OpportunityListFieldsUnselectedSettings {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  "List<string>" field {
+    _required = false
+  }
+  metadataType = "OpportunityListFieldsUnselectedSettings"
+}

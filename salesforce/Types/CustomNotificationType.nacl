@@ -1,0 +1,25 @@
+type salesforce.CustomNotificationType {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  serviceid fullName {
+    _required = false
+  }
+  string customNotifTypeName {
+    _required = false
+  }
+  string description {
+    _required = false
+  }
+  boolean desktop {
+    _required = false
+  }
+  string masterLabel {
+    _required = false
+  }
+  boolean mobile {
+    _required = false
+  }
+  metadataType = "CustomNotificationType"
+}

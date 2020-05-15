@@ -1,0 +1,10 @@
+type salesforce.PrimaryTabComponents {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  salesforce.Container containers {
+    _required = false
+  }
+  metadataType = "PrimaryTabComponents"
+}

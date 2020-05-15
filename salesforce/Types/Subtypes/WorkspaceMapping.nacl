@@ -1,0 +1,13 @@
+type salesforce.WorkspaceMapping {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  string fieldName {
+    _required = false
+  }
+  string tab {
+    _required = false
+  }
+  metadataType = "WorkspaceMapping"
+}

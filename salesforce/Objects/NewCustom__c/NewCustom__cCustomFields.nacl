@@ -1,0 +1,11 @@
+type salesforce.NewCustom__c {
+  salesforce.Text SLASerialNumber__c {
+    apiName = "NewCustom__c.SLASerialNumber__c"
+    label = "SLA Serial Number"
+    _required = false
+    unique = false
+    caseSensitive = false
+    length = 10
+    externalId = false
+  }
+}

@@ -1,0 +1,172 @@
+type salesforce.ExternalDataSource {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  string authProvider {
+    _required = false
+  }
+  string certificate {
+    _required = false
+  }
+  string customConfiguration {
+    _required = false
+  }
+  salesforce.CustomHttpHeader customHttpHeaders {
+    _required = false
+  }
+  string endpoint {
+    _required = false
+  }
+  serviceid fullName {
+    _required = false
+  }
+  boolean isWritable {
+    _required = false
+  }
+  string label {
+    _required = false
+  }
+  string oauthRefreshToken {
+    _required = false
+  }
+  string oauthScope {
+    _required = false
+  }
+  string oauthToken {
+    _required = false
+  }
+  string password {
+    _required = false
+  }
+  string principalType {
+    _required = false
+    _restriction = {
+        enforce_value = false
+        values = [
+            "Anonymous",
+            "NamedUser",
+            "PerUser",
+            "UserWithImpersonation",
+        ]
+    }
+  }
+  string protocol {
+    _required = false
+    _restriction = {
+        enforce_value = false
+        values = [
+            "ApiKey",
+            "AwsSv4",
+            "C2c",
+            "Certificate",
+            "Jwt",
+            "JwtExchange",
+            "NTLM",
+            "NoAuthentication",
+            "Oauth",
+            "Password",
+        ]
+    }
+  }
+  string repository {
+    _required = false
+  }
+  string type {
+    _required = false
+    _restriction = {
+        enforce_value = false
+        values = [
+            "ActivityPlatform",
+            "Alert",
+            "BTSuggestionFeedback",
+            "BigObjectZosId",
+            "CalendarSharing",
+            "CommerceOrder",
+            "Conduit",
+            "Consent",
+            "ContentHubBox",
+            "ContentHubGDrive",
+            "ContentHubIsotope",
+            "ContentHubMock",
+            "ContentHubMockito",
+            "ContentHubOneDriveGraph",
+            "ContentHubPerf",
+            "ContentHubQuip",
+            "ContentHubSharepoint",
+            "ContentHubSharepointOffice365",
+            "ContentHubSharepointOneDrive",
+            "CustomMetadata",
+            "DataFederationService",
+            "Datacloud",
+            "Datajourney",
+            "EnInsightsFeedback",
+            "Engagement",
+            "ForecastingItemPivot",
+            "Ftest",
+            "Identity",
+            "Jigsaw",
+            "Limits",
+            "LogoFeedback",
+            "MasterProfile",
+            "MenuItem",
+            "MetadataCatalog",
+            "MetadataComponentDependency",
+            "OData",
+            "OData4",
+            "OpenSearch",
+            "Pardot",
+            "PardotEntity",
+            "Perms",
+            "Pliny",
+            "Salesforce",
+            "SetupNode",
+            "SfdcOrg",
+            "Sharepoint",
+            "SharepointOnline",
+            "SimpleURL",
+            "Wrapper",
+            "Zero",
+            "bcpApp",
+            "bcpAppMember",
+            "bcpEntity",
+            "bcpEntityPermSet",
+            "bcpEntityPermission",
+            "bcpField",
+            "bcpFieldPermission",
+            "bcpMember",
+            "bcpParticipant",
+            "bcpParticipantAccess",
+            "bcpPermissionSet",
+            "bcpRecAccApproval",
+            "bcpRecordAccess",
+            "bcpRelParticipant",
+            "bluetailfeedback",
+            "conduitSubscriber",
+            "contentHubItem",
+            "conversationeventlog",
+            "cooper",
+            "dataStatistics",
+            "flexQueueItemInst",
+            "forecastingUserPref",
+            "layoutSectionStateDS",
+            "listViewChartInst",
+            "networkWorkspaceNode",
+            "outgoingemail",
+            "platformAction",
+            "readonlyapp",
+            "recommendation",
+            "s2xmobileconfig",
+            "salesforceIq",
+            "userListPreference",
+        ]
+    }
+  }
+  string username {
+    _required = false
+  }
+  string version {
+    _required = false
+  }
+  metadataType = "ExternalDataSource"
+}

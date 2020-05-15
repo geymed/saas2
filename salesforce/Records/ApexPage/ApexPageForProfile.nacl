@@ -1,0 +1,8 @@
+salesforce.ApexPage ApexPageForProfile {
+  apiVersion = 47
+  availableInTouch = false
+  confirmationTokenRequired = false
+  label = "ApexPageForProfile"
+  fullName = "ApexPageForProfile"
+  content = "<apex:page >Created by e2e test for profile test!</apex:page>"
+}
