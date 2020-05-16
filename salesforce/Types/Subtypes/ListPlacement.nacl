@@ -1,0 +1,19 @@
+type salesforce.ListPlacement {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  number height {
+    _required = false
+  }
+  string location {
+    _required = false
+  }
+  string units {
+    _required = false
+  }
+  number width {
+    _required = false
+  }
+  metadataType = "ListPlacement"
+}

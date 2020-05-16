@@ -1,0 +1,22 @@
+type salesforce.MutingPermissionSet {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  serviceid fullName {
+    _required = false
+  }
+  string description {
+    _required = false
+  }
+  boolean hasActivationRequired {
+    _required = false
+  }
+  string label {
+    _required = false
+  }
+  string license {
+    _required = false
+  }
+  metadataType = "MutingPermissionSet"
+}

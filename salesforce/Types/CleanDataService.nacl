@@ -1,0 +1,22 @@
+type salesforce.CleanDataService {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  serviceid fullName {
+    _required = false
+  }
+  "List<salesforce.CleanRule>" cleanRules {
+    _required = false
+  }
+  string description {
+    _required = false
+  }
+  string masterLabel {
+    _required = false
+  }
+  string matchEngine {
+    _required = false
+  }
+  metadataType = "CleanDataService"
+}

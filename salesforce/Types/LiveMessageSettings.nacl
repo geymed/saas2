@@ -1,0 +1,13 @@
+settings salesforce.LiveMessageSettings {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  serviceid fullName {
+    _required = false
+  }
+  boolean enableLiveMessage {
+    _required = false
+  }
+  metadataType = "LiveMessageSettings"
+}

@@ -1,0 +1,16 @@
+type salesforce.ProfileApplicationVisibility {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  string application {
+    _required = false
+  }
+  boolean default {
+    _required = false
+  }
+  boolean visible {
+    _required = false
+  }
+  metadataType = "ProfileApplicationVisibility"
+}

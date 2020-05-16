@@ -1,0 +1,31 @@
+type salesforce.AnalyticSnapshot {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  string description {
+    _required = false
+  }
+  serviceid fullName {
+    _required = false
+  }
+  string groupColumn {
+    _required = false
+  }
+  "List<salesforce.AnalyticSnapshotMapping>" mappings {
+    _required = false
+  }
+  string name {
+    _required = false
+  }
+  string runningUser {
+    _required = false
+  }
+  string sourceReport {
+    _required = false
+  }
+  string targetObject {
+    _required = false
+  }
+  metadataType = "AnalyticSnapshot"
+}

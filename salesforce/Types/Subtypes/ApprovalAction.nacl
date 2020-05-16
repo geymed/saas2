@@ -1,0 +1,10 @@
+type salesforce.ApprovalAction {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  "List<salesforce.WorkflowActionReference>" action {
+    _required = false
+  }
+  metadataType = "ApprovalAction"
+}

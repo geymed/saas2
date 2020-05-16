@@ -1,0 +1,10 @@
+type salesforce.QuickActionListItem {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  string quickActionName {
+    _required = false
+  }
+  metadataType = "QuickActionListItem"
+}

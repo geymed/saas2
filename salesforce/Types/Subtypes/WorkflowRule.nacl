@@ -1,0 +1,43 @@
+type salesforce.WorkflowRule {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  "List<salesforce.WorkflowActionReference>" actions {
+    _required = false
+  }
+  boolean active {
+    _required = false
+  }
+  string booleanFilter {
+    _required = false
+  }
+  "List<salesforce.FilterItem>" criteriaItems {
+    _required = false
+  }
+  string description {
+    _required = false
+  }
+  string formula {
+    _required = false
+  }
+  serviceid fullName {
+    _required = false
+  }
+  string triggerType {
+    _required = false
+    _restriction = {
+        enforce_value = false
+        values = [
+            "OnRecursiveUpdate",
+            "onAllChanges",
+            "onCreateOnly",
+            "onCreateOrTriggeringUpdate",
+        ]
+    }
+  }
+  "List<salesforce.WorkflowTimeTrigger>" workflowTimeTriggers {
+    _required = false
+  }
+  metadataType = "WorkflowRule"
+}

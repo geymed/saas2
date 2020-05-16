@@ -1,0 +1,31 @@
+type salesforce.CspTrustedSite {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  string context {
+    _required = false
+    _restriction = {
+        enforce_value = false
+        values = [
+            "All",
+            "Communities",
+            "FieldServiceMobileExtension",
+            "LEX",
+        ]
+    }
+  }
+  string description {
+    _required = false
+  }
+  string endpointUrl {
+    _required = false
+  }
+  serviceid fullName {
+    _required = false
+  }
+  boolean isActive {
+    _required = false
+  }
+  metadataType = "CspTrustedSite"
+}

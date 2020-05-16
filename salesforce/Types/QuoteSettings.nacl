@@ -1,0 +1,15 @@
+settings salesforce.QuoteSettings {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  boolean enableQuote {
+    _required = false
+  }
+  serviceid fullName {
+    _required = false
+  }
+  boolean enableQuotesWithoutOppEnabled {
+  }
+  metadataType = "QuoteSettings"
+}

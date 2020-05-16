@@ -1,0 +1,16 @@
+type salesforce.DelegateGroup {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  serviceid fullName {
+    _required = false
+  }
+  string label {
+    _required = false
+  }
+  boolean loginAccess {
+    _required = false
+  }
+  metadataType = "DelegateGroup"
+}

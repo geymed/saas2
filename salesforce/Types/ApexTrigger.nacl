@@ -1,0 +1,30 @@
+type salesforce.ApexTrigger {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  serviceid fullName {
+    _required = false
+  }
+  string content {
+    _required = false
+  }
+  number apiVersion {
+    _required = false
+  }
+  "List<salesforce.PackageVersion>" packageVersions {
+    _required = false
+  }
+  string status {
+    _required = false
+    _restriction = {
+        enforce_value = false
+        values = [
+            "Active",
+            "Deleted",
+            "Inactive",
+        ]
+    }
+  }
+  metadataType = "ApexTrigger"
+}

@@ -1,0 +1,22 @@
+type salesforce.ComponentInstanceProperty {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  string name {
+    _required = false
+  }
+  string type {
+    _required = false
+    _restriction = {
+        enforce_value = false
+        values = [
+            "decorator",
+        ]
+    }
+  }
+  string value {
+    _required = false
+  }
+  metadataType = "ComponentInstanceProperty"
+}

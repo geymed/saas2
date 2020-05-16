@@ -1,0 +1,13 @@
+type salesforce.AppComponentList {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  string alignment {
+    _required = false
+  }
+  string components {
+    _required = false
+  }
+  metadataType = "AppComponentList"
+}

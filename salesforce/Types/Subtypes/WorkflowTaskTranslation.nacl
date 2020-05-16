@@ -1,0 +1,16 @@
+type salesforce.WorkflowTaskTranslation {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  string description {
+    _required = false
+  }
+  string name {
+    _required = false
+  }
+  string subject {
+    _required = false
+  }
+  metadataType = "WorkflowTaskTranslation"
+}

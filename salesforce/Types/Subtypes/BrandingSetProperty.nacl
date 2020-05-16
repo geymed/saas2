@@ -1,0 +1,13 @@
+type salesforce.BrandingSetProperty {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  string propertyName {
+    _required = false
+  }
+  string propertyValue {
+    _required = false
+  }
+  metadataType = "BrandingSetProperty"
+}

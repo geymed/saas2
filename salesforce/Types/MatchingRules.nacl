@@ -1,0 +1,13 @@
+type salesforce.MatchingRules {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  serviceid fullName {
+    _required = false
+  }
+  salesforce.MatchingRule matchingRules {
+    _required = false
+  }
+  metadataType = "MatchingRules"
+}

@@ -1,0 +1,12 @@
+settings salesforce.ExperienceBundleSettings {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  serviceid fullName {
+    _required = false
+  }
+  boolean enableExperienceBundleMetadata {
+  }
+  metadataType = "ExperienceBundleSettings"
+}

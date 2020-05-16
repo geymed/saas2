@@ -1,0 +1,26 @@
+settings salesforce.EACSettings {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  serviceid fullName {
+    _required = false
+  }
+  boolean enableActivityCapture {
+  }
+  boolean enableActivityMetrics {
+  }
+  boolean enableActivitySyncEngine {
+  }
+  boolean enableEACForEveryonePref {
+  }
+  boolean enableInboxActivitySharing {
+  }
+  boolean enableInsightsInTimeline {
+  }
+  boolean enableInsightsInTimelineEacStd {
+  }
+  boolean provisionProductivityFeatures {
+  }
+  metadataType = "EACSettings"
+}

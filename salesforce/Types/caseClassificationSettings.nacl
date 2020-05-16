@@ -1,0 +1,8 @@
+type salesforce.caseClassificationSettings {
+  boolean caseClassificationRecommendations {
+  }
+  boolean reRunAttributeBasedRules {
+  }
+  boolean runAssignmentRules {
+  }
+}

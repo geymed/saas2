@@ -1,0 +1,10 @@
+type salesforce.AppWorkspaceConfig {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  "List<salesforce.WorkspaceMapping>" mappings {
+    _required = false
+  }
+  metadataType = "AppWorkspaceConfig"
+}

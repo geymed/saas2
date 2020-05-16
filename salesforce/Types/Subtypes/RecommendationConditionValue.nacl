@@ -1,0 +1,10 @@
+type salesforce.RecommendationConditionValue {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  string value {
+    _required = false
+  }
+  metadataType = "RecommendationConditionValue"
+}

@@ -1,0 +1,22 @@
+type salesforce.PostTemplate {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  serviceid fullName {
+    _required = false
+  }
+  boolean default {
+    _required = false
+  }
+  string description {
+    _required = false
+  }
+  string fields {
+    _required = false
+  }
+  string label {
+    _required = false
+  }
+  metadataType = "PostTemplate"
+}

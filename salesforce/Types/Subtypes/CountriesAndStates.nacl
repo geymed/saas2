@@ -1,0 +1,10 @@
+type salesforce.CountriesAndStates {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  "List<salesforce.Country>" countries {
+    _required = false
+  }
+  metadataType = "CountriesAndStates"
+}

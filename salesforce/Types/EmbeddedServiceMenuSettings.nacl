@@ -1,0 +1,25 @@
+type salesforce.EmbeddedServiceMenuSettings {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  serviceid fullName {
+    _required = false
+  }
+  string branding {
+    _required = false
+  }
+  salesforce.EmbeddedServiceMenuItem embeddedServiceMenuItems {
+    _required = false
+  }
+  boolean isEnabled {
+    _required = false
+  }
+  string masterLabel {
+    _required = false
+  }
+  string site {
+    _required = false
+  }
+  metadataType = "EmbeddedServiceMenuSettings"
+}

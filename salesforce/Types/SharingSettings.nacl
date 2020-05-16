@@ -1,0 +1,38 @@
+settings salesforce.SharingSettings {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  serviceid fullName {
+    _required = false
+  }
+  boolean enableAccountRoleOptimization {
+  }
+  boolean enableAssetSharing {
+  }
+  boolean enableCommunityUserVisibility {
+  }
+  boolean enableExternalSharingModel {
+  }
+  boolean enableManagerGroups {
+  }
+  boolean enableManualUserRecordSharing {
+  }
+  boolean enablePartnerSuperUserAccess {
+  }
+  boolean enablePortalUserCaseSharing {
+  }
+  boolean enablePortalUserVisibility {
+  }
+  boolean enableRemoveTMGroupMembership {
+  }
+  boolean enableRestrictAccessLookupRecords {
+  }
+  boolean enableSecureGuestAccess {
+  }
+  boolean enableStandardReportVisibility {
+  }
+  boolean enableTerritoryForecastManager {
+  }
+  metadataType = "SharingSettings"
+}

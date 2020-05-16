@@ -1,0 +1,10 @@
+type salesforce.Roles {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  string role {
+    _required = false
+  }
+  metadataType = "Roles"
+}

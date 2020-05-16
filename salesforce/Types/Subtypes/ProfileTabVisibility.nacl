@@ -1,0 +1,17 @@
+type salesforce.ProfileTabVisibility {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  string tab {
+    _required = false
+  }
+  string visibility {
+    _values = [
+        "DefaultOff",
+        "DefaultOn",
+        "Hidden",
+    ]
+  }
+  metadataType = "ProfileTabVisibility"
+}

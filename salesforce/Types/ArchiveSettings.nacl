@@ -1,0 +1,10 @@
+settings salesforce.ArchiveSettings {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  serviceid fullName {
+    _required = false
+  }
+  metadataType = "ArchiveSettings"
+}

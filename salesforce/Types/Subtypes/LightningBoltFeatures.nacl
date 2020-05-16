@@ -1,0 +1,16 @@
+type salesforce.LightningBoltFeatures {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  string description {
+    _required = false
+  }
+  number order {
+    _required = false
+  }
+  string title {
+    _required = false
+  }
+  metadataType = "LightningBoltFeatures"
+}

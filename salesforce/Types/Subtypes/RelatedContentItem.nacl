@@ -1,0 +1,10 @@
+type salesforce.RelatedContentItem {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  salesforce.LayoutItem layoutItem {
+    _required = false
+  }
+  metadataType = "RelatedContentItem"
+}

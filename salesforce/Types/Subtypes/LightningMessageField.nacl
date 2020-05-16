@@ -1,0 +1,13 @@
+type salesforce.LightningMessageField {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  string description {
+    _required = false
+  }
+  string fieldName {
+    _required = false
+  }
+  metadataType = "LightningMessageField"
+}

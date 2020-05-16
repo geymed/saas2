@@ -1,0 +1,16 @@
+type salesforce.HomePageLayout {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  serviceid fullName {
+    _required = false
+  }
+  "List<string>" narrowComponents {
+    _required = false
+  }
+  "List<string>" wideComponents {
+    _required = false
+  }
+  metadataType = "HomePageLayout"
+}

@@ -1,0 +1,12 @@
+settings salesforce.AppExperienceSettings {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  serviceid fullName {
+    _required = false
+  }
+  boolean doesHideAllAppsInAppLauncher {
+  }
+  metadataType = "AppExperienceSettings"
+}

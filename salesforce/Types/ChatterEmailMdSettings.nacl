@@ -1,0 +1,14 @@
+type salesforce.ChatterEmailMdSettings {
+  boolean enableChatterDigestEmailsApiOnly {
+  }
+  boolean enableChatterEmailAttachment {
+  }
+  boolean enableCollaborationEmail {
+  }
+  boolean enableDisplayAppDownloadBadges {
+  }
+  boolean enableEmailReplyToChatter {
+  }
+  boolean enableEmailToChatter {
+  }
+}

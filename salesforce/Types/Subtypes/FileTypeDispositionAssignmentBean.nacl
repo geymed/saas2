@@ -1,0 +1,10 @@
+type salesforce.FileTypeDispositionAssignmentBean {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  boolean securityRiskFileType {
+    _required = false
+  }
+  metadataType = "FileTypeDispositionAssignmentBean"
+}

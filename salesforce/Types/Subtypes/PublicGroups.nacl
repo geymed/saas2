@@ -1,0 +1,10 @@
+type salesforce.PublicGroups {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  string publicGroup {
+    _required = false
+  }
+  metadataType = "PublicGroups"
+}

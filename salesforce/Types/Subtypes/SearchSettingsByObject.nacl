@@ -1,0 +1,10 @@
+type salesforce.SearchSettingsByObject {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  "List<salesforce.ObjectSearchSetting>" searchSettingsByObject {
+    _required = false
+  }
+  metadataType = "SearchSettingsByObject"
+}

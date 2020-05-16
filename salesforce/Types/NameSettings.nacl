@@ -1,0 +1,18 @@
+settings salesforce.NameSettings {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  serviceid fullName {
+    _required = false
+  }
+  boolean enableMiddleName {
+    _required = false
+  }
+  boolean enableNameSuffix {
+    _required = false
+  }
+  boolean enableFormalName {
+  }
+  metadataType = "NameSettings"
+}

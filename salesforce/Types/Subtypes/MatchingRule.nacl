@@ -1,0 +1,36 @@
+type salesforce.MatchingRule {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  serviceid fullName {
+    _required = false
+  }
+  string booleanFilter {
+    _required = false
+  }
+  string description {
+    _required = false
+  }
+  string label {
+    _required = false
+  }
+  salesforce.MatchingRuleItem matchingRuleItems {
+    _required = false
+  }
+  string ruleStatus {
+    _required = false
+    _restriction = {
+        enforce_value = false
+        values = [
+            "Activating",
+            "ActivationFailed",
+            "Active",
+            "Deactivating",
+            "DeactivationFailed",
+            "Inactive",
+        ]
+    }
+  }
+  metadataType = "MatchingRule"
+}

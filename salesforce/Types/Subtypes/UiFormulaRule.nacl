@@ -1,0 +1,13 @@
+type salesforce.UiFormulaRule {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  string booleanFilter {
+    _required = false
+  }
+  "List<salesforce.UiFormulaCriterion>" criteria {
+    _required = false
+  }
+  metadataType = "UiFormulaRule"
+}

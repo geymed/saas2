@@ -1,0 +1,13 @@
+type salesforce.SkillAssignments {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  salesforce.SkillProfileAssignments profiles {
+    _required = false
+  }
+  salesforce.SkillUserAssignments users {
+    _required = false
+  }
+  metadataType = "SkillAssignments"
+}

@@ -1,0 +1,8 @@
+type salesforce.AccountIntelligenceSetings {
+  boolean enableAccountLogos {
+  }
+  boolean enableAutomatedAccountFields {
+  }
+  boolean enableNewsStories {
+  }
+}

@@ -1,0 +1,28 @@
+type salesforce.EmailFolder {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  serviceid fullName {
+    _required = false
+  }
+  string accessType {
+    _required = false
+    _restriction = {
+        enforce_value = false
+        values = [
+            "Hidden",
+            "Public",
+            "PublicInternal",
+            "Shared",
+        ]
+    }
+  }
+  string name {
+    _required = false
+  }
+  salesforce.SharedTo sharedTo {
+    _required = false
+  }
+  metadataType = "EmailFolder"
+}

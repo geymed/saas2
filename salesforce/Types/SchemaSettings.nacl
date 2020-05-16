@@ -1,0 +1,18 @@
+settings salesforce.SchemaSettings {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  serviceid fullName {
+    _required = false
+  }
+  boolean enableAdvancedCMTSecurity {
+  }
+  boolean enableAdvancedCSSecurity {
+  }
+  boolean enableListCustomSettingCreation {
+  }
+  boolean enableSOSLOnCustomSettings {
+  }
+  metadataType = "SchemaSettings"
+}

@@ -1,0 +1,25 @@
+type salesforce.RecordActionRecommendation {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  string defaultStrategy {
+    _required = false
+  }
+  boolean hasDescription {
+    _required = false
+  }
+  boolean hasImage {
+    _required = false
+  }
+  boolean hasRejectAction {
+    _required = false
+  }
+  boolean hasTitle {
+    _required = false
+  }
+  number maxDisplayRecommendations {
+    _required = false
+  }
+  metadataType = "RecordActionRecommendation"
+}

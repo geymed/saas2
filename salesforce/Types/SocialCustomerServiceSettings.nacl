@@ -1,0 +1,14 @@
+type salesforce.SocialCustomerServiceSettings {
+  boolean enableSocialApprovals {
+  }
+  boolean enableSocialCaseAssignmentRules {
+  }
+  boolean enableSocialCustomerService {
+  }
+  boolean enableSocialPersonaHistoryTracking {
+  }
+  boolean enableSocialPostHistoryTracking {
+  }
+  boolean enableSocialReceiveParentPost {
+  }
+}

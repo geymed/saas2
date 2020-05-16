@@ -1,0 +1,19 @@
+type salesforce.Skill {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  salesforce.SkillAssignments assignments {
+    _required = false
+  }
+  string description {
+    _required = false
+  }
+  serviceid fullName {
+    _required = false
+  }
+  string label {
+    _required = false
+  }
+  metadataType = "Skill"
+}

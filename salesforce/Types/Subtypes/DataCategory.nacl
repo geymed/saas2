@@ -1,0 +1,16 @@
+type salesforce.DataCategory {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  salesforce.DataCategory dataCategory {
+    _required = false
+  }
+  string label {
+    _required = false
+  }
+  string name {
+    _required = false
+  }
+  metadataType = "DataCategory"
+}

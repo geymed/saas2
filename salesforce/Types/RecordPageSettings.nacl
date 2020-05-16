@@ -1,0 +1,14 @@
+settings salesforce.RecordPageSettings {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  serviceid fullName {
+    _required = false
+  }
+  boolean enableActivityRelatedList {
+  }
+  boolean enableFullRecordView {
+  }
+  metadataType = "RecordPageSettings"
+}

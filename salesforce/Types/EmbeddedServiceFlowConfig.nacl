@@ -1,0 +1,13 @@
+type salesforce.EmbeddedServiceFlowConfig {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  serviceid fullName {
+    _required = false
+  }
+  boolean enabled {
+    _required = false
+  }
+  metadataType = "EmbeddedServiceFlowConfig"
+}

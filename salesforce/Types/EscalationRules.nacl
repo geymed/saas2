@@ -1,0 +1,13 @@
+type salesforce.EscalationRules {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  salesforce.EscalationRule escalationRule {
+    _required = false
+  }
+  serviceid fullName {
+    _required = false
+  }
+  metadataType = "EscalationRules"
+}

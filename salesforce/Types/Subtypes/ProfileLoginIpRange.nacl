@@ -1,0 +1,16 @@
+type salesforce.ProfileLoginIpRange {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  string description {
+    _required = false
+  }
+  string endAddress {
+    _required = false
+  }
+  string startAddress {
+    _required = false
+  }
+  metadataType = "ProfileLoginIpRange"
+}

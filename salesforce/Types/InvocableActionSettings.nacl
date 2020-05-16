@@ -1,0 +1,12 @@
+settings salesforce.InvocableActionSettings {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  serviceid fullName {
+    _required = false
+  }
+  boolean isPartialSaveAllowed {
+  }
+  metadataType = "InvocableActionSettings"
+}

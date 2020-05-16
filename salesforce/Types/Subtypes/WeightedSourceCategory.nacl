@@ -1,0 +1,13 @@
+type salesforce.WeightedSourceCategory {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  string sourceCategoryApiName {
+    _required = false
+  }
+  number weight {
+    _required = false
+  }
+  metadataType = "WeightedSourceCategory"
+}

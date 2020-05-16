@@ -1,0 +1,10 @@
+type salesforce.RelatedContent {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  "List<salesforce.RelatedContentItem>" relatedContentItems {
+    _required = false
+  }
+  metadataType = "RelatedContent"
+}

@@ -1,0 +1,13 @@
+type salesforce.ProfileCategoryGroupVisibility {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  string dataCategories {
+    _required = false
+  }
+  string dataCategoryGroup {
+    _required = false
+  }
+  metadataType = "ProfileCategoryGroupVisibility"
+}

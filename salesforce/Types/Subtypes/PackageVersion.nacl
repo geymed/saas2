@@ -1,0 +1,16 @@
+type salesforce.PackageVersion {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  number majorNumber {
+    _required = false
+  }
+  number minorNumber {
+    _required = false
+  }
+  string namespace {
+    _required = false
+  }
+  metadataType = "PackageVersion"
+}

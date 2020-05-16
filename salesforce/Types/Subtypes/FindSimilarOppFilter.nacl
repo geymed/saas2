@@ -1,0 +1,13 @@
+type salesforce.FindSimilarOppFilter {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  string similarOpportunitiesDisplayColumns {
+    _required = false
+  }
+  string similarOpportunitiesMatchFields {
+    _required = false
+  }
+  metadataType = "FindSimilarOppFilter"
+}

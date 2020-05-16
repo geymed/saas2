@@ -1,0 +1,31 @@
+type salesforce.ApexPage {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  number apiVersion {
+    _required = false
+  }
+  boolean availableInTouch {
+    _required = false
+  }
+  boolean confirmationTokenRequired {
+    _required = false
+  }
+  string content {
+    _required = false
+  }
+  string description {
+    _required = false
+  }
+  serviceid fullName {
+    _required = false
+  }
+  string label {
+    _required = false
+  }
+  "List<salesforce.PackageVersion>" packageVersions {
+    _required = false
+  }
+  metadataType = "ApexPage"
+}

@@ -1,0 +1,10 @@
+type salesforce.EmbeddedServiceLayoutRule {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  string appointmentStatus {
+    _required = false
+  }
+  metadataType = "EmbeddedServiceLayoutRule"
+}

@@ -1,0 +1,25 @@
+type salesforce.EmbeddedServiceAppointmentSettings {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  string appointmentConfirmImg {
+    _required = false
+  }
+  boolean enabled {
+    _required = false
+  }
+  string homeImg {
+    _required = false
+  }
+  string logoImg {
+    _required = false
+  }
+  boolean shouldShowExistingAppointment {
+    _required = false
+  }
+  boolean shouldShowNewAppointment {
+    _required = false
+  }
+  metadataType = "EmbeddedServiceAppointmentSettings"
+}

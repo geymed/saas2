@@ -1,0 +1,10 @@
+type salesforce.RoleAndSubordinates {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  string roleAndSubordinate {
+    _required = false
+  }
+  metadataType = "RoleAndSubordinates"
+}

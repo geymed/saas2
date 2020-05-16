@@ -1,0 +1,25 @@
+type salesforce.Workflow {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  serviceid fullName {
+    _required = false
+  }
+  "List<string>" rules {
+    _required = false
+  }
+  "List<string>" alerts {
+  }
+  "List<string>" fieldUpdates {
+  }
+  "List<string>" flowActions {
+  }
+  "List<string>" knowledgePublishes {
+  }
+  "List<string>" outboundMessages {
+  }
+  "List<string>" tasks {
+  }
+  metadataType = "Workflow"
+}

@@ -1,0 +1,12 @@
+settings salesforce.OrgPreferenceSettings {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  serviceid fullName {
+    _required = false
+  }
+  "List<salesforce.OrganizationSettingsDetail>" preferences {
+  }
+  metadataType = "OrgPreferenceSettings"
+}

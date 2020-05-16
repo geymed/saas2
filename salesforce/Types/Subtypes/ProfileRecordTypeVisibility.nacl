@@ -1,0 +1,19 @@
+type salesforce.ProfileRecordTypeVisibility {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  boolean default {
+    _required = false
+  }
+  boolean personAccountDefault {
+    _required = false
+  }
+  string recordType {
+    _required = false
+  }
+  boolean visible {
+    _required = false
+  }
+  metadataType = "ProfileRecordTypeVisibility"
+}

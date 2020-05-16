@@ -1,0 +1,10 @@
+type salesforce.OpportunityListFieldsSelectedSettings {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  "List<string>" field {
+    _required = false
+  }
+  metadataType = "OpportunityListFieldsSelectedSettings"
+}

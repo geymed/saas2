@@ -1,0 +1,13 @@
+type salesforce.ProfileLayoutAssignment {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  string layout {
+    _required = false
+  }
+  string recordType {
+    _required = false
+  }
+  metadataType = "ProfileLayoutAssignment"
+}

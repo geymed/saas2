@@ -1,0 +1,12 @@
+settings salesforce.TrialOrgSettings {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  serviceid fullName {
+    _required = false
+  }
+  boolean enableSampleDataDeleted {
+  }
+  metadataType = "TrialOrgSettings"
+}

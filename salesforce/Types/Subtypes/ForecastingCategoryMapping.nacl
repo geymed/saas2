@@ -1,0 +1,13 @@
+type salesforce.ForecastingCategoryMapping {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  string forecastingItemCategoryApiName {
+    _required = false
+  }
+  "List<salesforce.WeightedSourceCategory>" weightedSourceCategories {
+    _required = false
+  }
+  metadataType = "ForecastingCategoryMapping"
+}

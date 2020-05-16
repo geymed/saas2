@@ -1,0 +1,118 @@
+type salesforce.Recommendation {
+  salesforce.Text Id {
+    apiName = "Recommendation.Id"
+    label = "Recommendation ID"
+    _required = true
+    unique = false
+    caseSensitive = false
+    length = 18
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "Recommendation.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+  }
+  salesforce.Name Name {
+    apiName = "Recommendation.Name"
+    label = "Name"
+    _required = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "Recommendation.CreatedDate"
+    label = "Created Date"
+    _required = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "Recommendation.CreatedById"
+    label = "Created By ID"
+    _required = true
+    allowLookupRecordDeletion = true
+    referenceTo = [
+        "User",
+    ]
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "Recommendation.LastModifiedDate"
+    label = "Last Modified Date"
+    _required = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "Recommendation.LastModifiedById"
+    label = "Last Modified By ID"
+    _required = true
+    allowLookupRecordDeletion = true
+    referenceTo = [
+        "User",
+    ]
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "Recommendation.SystemModstamp"
+    label = "System Modstamp"
+    _required = true
+  }
+  salesforce.DateTime LastViewedDate {
+    apiName = "Recommendation.LastViewedDate"
+    label = "Last Viewed Date"
+    _required = false
+  }
+  salesforce.DateTime LastReferencedDate {
+    apiName = "Recommendation.LastReferencedDate"
+    label = "Last Referenced Date"
+    _required = false
+  }
+  salesforce.Text ActionReference {
+    apiName = "Recommendation.ActionReference"
+    label = "Action"
+    _required = true
+    unique = false
+    caseSensitive = false
+    length = 255
+  }
+  salesforce.Text Description {
+    apiName = "Recommendation.Description"
+    label = "Description"
+    _required = true
+    unique = false
+    caseSensitive = false
+    length = 255
+  }
+  salesforce.Lookup ImageId {
+    apiName = "Recommendation.ImageId"
+    label = "Asset File ID"
+    _required = false
+    allowLookupRecordDeletion = true
+    referenceTo = [
+        "ContentAsset",
+    ]
+    inlineHelpText = "For best results, use a 1000 px x 380 px image at 72 dpi or one with a similar ratio."
+  }
+  salesforce.Text AcceptanceLabel {
+    apiName = "Recommendation.AcceptanceLabel"
+    label = "Acceptance Label"
+    _required = true
+    unique = false
+    caseSensitive = false
+    length = 80
+  }
+  salesforce.Text RejectionLabel {
+    apiName = "Recommendation.RejectionLabel"
+    label = "Rejection Label"
+    _required = true
+    unique = false
+    caseSensitive = false
+    length = 80
+  }
+  salesforce.Checkbox IsActionActive {
+    apiName = "Recommendation.IsActionActive"
+    label = "Is Action Active"
+    defaultValue = false
+  }
+  salesforce.Text ExternalId {
+    apiName = "Recommendation.ExternalId"
+    label = "External Id"
+    _required = false
+    unique = false
+    caseSensitive = false
+    length = 255
+  }
+}

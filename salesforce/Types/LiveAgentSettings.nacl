@@ -1,0 +1,17 @@
+settings salesforce.LiveAgentSettings {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  boolean enableLiveAgent {
+    _required = false
+  }
+  serviceid fullName {
+    _required = false
+  }
+  number priority {
+  }
+  boolean enableQuickTextEnabled {
+  }
+  metadataType = "LiveAgentSettings"
+}

@@ -1,0 +1,92 @@
+type salesforce.ProfileActionOverride {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  string actionName {
+    _required = false
+  }
+  string content {
+    _required = false
+  }
+  string formFactor {
+    _required = false
+    _restriction = {
+        enforce_value = false
+        values = [
+            "Large",
+            "Medium",
+            "Small",
+        ]
+    }
+  }
+  string pageOrSobjectType {
+    _required = false
+    _restriction = {
+        enforce_value = false
+        values = [
+            "Account",
+            "Asset",
+            "AssetRelationship",
+            "Campaign",
+            "CampaignMember",
+            "Case",
+            "CollaborationGroup",
+            "CommSubscription",
+            "CommSubscriptionChannelType",
+            "CommSubscriptionConsent",
+            "CommSubscriptionTiming",
+            "Contact",
+            "ContactRequest",
+            "ContentDocument",
+            "Contract",
+            "EngagementChannelType",
+            "EnhancedLetterhead",
+            "Event",
+            "Lead",
+            "MessagingEndUser",
+            "MessagingSession",
+            "NewObjectBabe__c",
+            "NewObjectBabi__c",
+            "NewObjectName__c",
+            "Note",
+            "Opportunity",
+            "OpportunityLineItem",
+            "Order",
+            "OrderItem",
+            "PartyConsent",
+            "Pricebook2",
+            "PricebookEntry",
+            "ProcessInstanceStep",
+            "ProcessInstanceWorkitem",
+            "Product2",
+            "Scorecard",
+            "ScorecardAssociation",
+            "ScorecardMetric",
+            "SocialPersona",
+            "Task",
+            "User",
+            "standard-home",
+            "standard-mailapp",
+        ]
+    }
+  }
+  string recordType {
+    _required = false
+  }
+  string type {
+    _required = false
+    _restriction = {
+        enforce_value = false
+        values = [
+            "Default",
+            "Flexipage",
+            "LightningComponent",
+            "Scontrol",
+            "Standard",
+            "Visualforce",
+        ]
+    }
+  }
+  metadataType = "ProfileActionOverride"
+}

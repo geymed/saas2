@@ -1,0 +1,34 @@
+type salesforce.ApprovalSubmitter {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  string submitter {
+    _required = false
+  }
+  string type {
+    _required = false
+    _restriction = {
+        enforce_value = false
+        values = [
+            "accountOwner",
+            "accountOwnerDelegate",
+            "allInternalUsers",
+            "creator",
+            "creatorDelegate",
+            "customerPortalUser",
+            "group",
+            "owner",
+            "ownerDelegate",
+            "partnerUser",
+            "portalRole",
+            "portalRoleSubordinates",
+            "role",
+            "roleSubordinates",
+            "roleSubordinatesInternal",
+            "user",
+        ]
+    }
+  }
+  metadataType = "ApprovalSubmitter"
+}

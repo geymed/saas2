@@ -1,0 +1,40 @@
+type salesforce.CustomApplicationComponent {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  serviceid fullName {
+    _required = false
+  }
+  string buttonIconUrl {
+    _required = false
+  }
+  string buttonStyle {
+    _required = false
+  }
+  string buttonText {
+    _required = false
+  }
+  number buttonWidth {
+    _required = false
+  }
+  number height {
+    _required = false
+  }
+  boolean isHeightFixed {
+    _required = false
+  }
+  boolean isHidden {
+    _required = false
+  }
+  boolean isWidthFixed {
+    _required = false
+  }
+  string visualforcePage {
+    _required = false
+  }
+  number width {
+    _required = false
+  }
+  metadataType = "CustomApplicationComponent"
+}

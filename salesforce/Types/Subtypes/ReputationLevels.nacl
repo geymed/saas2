@@ -1,0 +1,13 @@
+type salesforce.ReputationLevels {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  salesforce.ChatterAnswersReputationLevel chatterAnswersReputationLevels {
+    _required = false
+  }
+  salesforce.IdeaReputationLevel ideaReputationLevels {
+    _required = false
+  }
+  metadataType = "ReputationLevels"
+}

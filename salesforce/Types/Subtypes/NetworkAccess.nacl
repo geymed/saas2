@@ -1,0 +1,10 @@
+type salesforce.NetworkAccess {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  "List<salesforce.IpRange>" ipRanges {
+    _required = false
+  }
+  metadataType = "NetworkAccess"
+}

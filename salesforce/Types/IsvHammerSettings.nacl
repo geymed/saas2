@@ -1,0 +1,10 @@
+settings salesforce.IsvHammerSettings {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  serviceid fullName {
+    _required = false
+  }
+  metadataType = "IsvHammerSettings"
+}

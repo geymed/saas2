@@ -1,0 +1,16 @@
+type salesforce.Territory2SettingsOpportunityFilter {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  string apexClassName {
+    _required = false
+  }
+  boolean enableFilter {
+    _required = false
+  }
+  boolean runOnCreate {
+    _required = false
+  }
+  metadataType = "Territory2SettingsOpportunityFilter"
+}

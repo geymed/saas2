@@ -1,0 +1,16 @@
+type salesforce.CompactLayout {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  serviceid fullName {
+    _required = false
+  }
+  "List<string>" fields {
+    _required = false
+  }
+  string label {
+    _required = false
+  }
+  metadataType = "CompactLayout"
+}

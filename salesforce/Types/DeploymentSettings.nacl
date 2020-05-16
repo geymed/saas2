@@ -1,0 +1,12 @@
+settings salesforce.DeploymentSettings {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  serviceid fullName {
+    _required = false
+  }
+  boolean doesSkipAsyncApexValidation {
+  }
+  metadataType = "DeploymentSettings"
+}

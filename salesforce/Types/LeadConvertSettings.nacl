@@ -1,0 +1,30 @@
+type salesforce.LeadConvertSettings {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  serviceid fullName {
+    _required = false
+  }
+  boolean allowOwnerChange {
+    _required = false
+  }
+  string opportunityCreationOptions {
+    _required = false
+    _restriction = {
+        enforce_value = false
+        values = [
+            "NotVisible",
+            "VisibleOptional",
+            "VisibleRequired",
+        ]
+    }
+  }
+  string inputField {
+  }
+  string outputField {
+  }
+  string outputObject {
+  }
+  metadataType = "LeadConvertSettings"
+}

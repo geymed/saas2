@@ -1,0 +1,13 @@
+type salesforce.IfExpression {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  string childName {
+    _required = false
+  }
+  string expression {
+    _required = false
+  }
+  metadataType = "IfExpression"
+}

@@ -1,0 +1,20 @@
+type salesforce.RecordActionSelectableItem {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  string action {
+    _required = false
+  }
+  string type {
+    _required = false
+    _restriction = {
+        enforce_value = false
+        values = [
+            "Flow",
+            "QuickAction",
+        ]
+    }
+  }
+  metadataType = "RecordActionSelectableItem"
+}

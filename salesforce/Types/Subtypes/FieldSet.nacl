@@ -1,0 +1,22 @@
+type salesforce.FieldSet {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  serviceid fullName {
+    _required = false
+  }
+  "List<salesforce.FieldSetItem>" availableFields {
+    _required = false
+  }
+  string description {
+    _required = false
+  }
+  "List<salesforce.FieldSetItem>" displayedFields {
+    _required = false
+  }
+  string label {
+    _required = false
+  }
+  metadataType = "FieldSet"
+}

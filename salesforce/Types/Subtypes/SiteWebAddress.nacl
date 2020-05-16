@@ -1,0 +1,16 @@
+type salesforce.SiteWebAddress {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  string certificate {
+    _required = false
+  }
+  string domainName {
+    _required = false
+  }
+  boolean primary {
+    _required = false
+  }
+  metadataType = "SiteWebAddress"
+}

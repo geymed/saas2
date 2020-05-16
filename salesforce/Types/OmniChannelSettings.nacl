@@ -1,0 +1,20 @@
+settings salesforce.OmniChannelSettings {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  boolean enableOmniChannel {
+    _required = false
+  }
+  boolean enableOmniSkillsRouting {
+    _required = false
+  }
+  serviceid fullName {
+    _required = false
+  }
+  boolean enableOmniAutoLoginPrompt {
+  }
+  boolean enableOmniSecondaryRoutingPriority {
+  }
+  metadataType = "OmniChannelSettings"
+}

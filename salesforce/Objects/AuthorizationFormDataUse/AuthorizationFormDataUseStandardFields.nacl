@@ -1,0 +1,91 @@
+type salesforce.AuthorizationFormDataUse {
+  salesforce.Text Id {
+    apiName = "AuthorizationFormDataUse.Id"
+    label = "Authorization Form Data Use ID"
+    _required = true
+    unique = false
+    caseSensitive = false
+    length = 18
+  }
+  salesforce.Lookup OwnerId {
+    apiName = "AuthorizationFormDataUse.OwnerId"
+    label = "Owner ID"
+    _required = true
+    allowLookupRecordDeletion = true
+    referenceTo = [
+        "Group",
+        "User",
+    ]
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "AuthorizationFormDataUse.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+  }
+  salesforce.Name Name {
+    apiName = "AuthorizationFormDataUse.Name"
+    label = "Name"
+    _required = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "AuthorizationFormDataUse.CreatedDate"
+    label = "Created Date"
+    _required = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "AuthorizationFormDataUse.CreatedById"
+    label = "Created By ID"
+    _required = true
+    allowLookupRecordDeletion = true
+    referenceTo = [
+        "User",
+    ]
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "AuthorizationFormDataUse.LastModifiedDate"
+    label = "Last Modified Date"
+    _required = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "AuthorizationFormDataUse.LastModifiedById"
+    label = "Last Modified By ID"
+    _required = true
+    allowLookupRecordDeletion = true
+    referenceTo = [
+        "User",
+    ]
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "AuthorizationFormDataUse.SystemModstamp"
+    label = "System Modstamp"
+    _required = true
+  }
+  salesforce.DateTime LastViewedDate {
+    apiName = "AuthorizationFormDataUse.LastViewedDate"
+    label = "Last Viewed Date"
+    _required = false
+  }
+  salesforce.DateTime LastReferencedDate {
+    apiName = "AuthorizationFormDataUse.LastReferencedDate"
+    label = "Last Referenced Date"
+    _required = false
+  }
+  salesforce.Lookup AuthorizationFormId {
+    apiName = "AuthorizationFormDataUse.AuthorizationFormId"
+    label = "Authorization Form ID"
+    _required = true
+    allowLookupRecordDeletion = true
+    referenceTo = [
+        "AuthorizationForm",
+    ]
+  }
+  salesforce.Lookup DataUsePurposeId {
+    apiName = "AuthorizationFormDataUse.DataUsePurposeId"
+    label = "Data Use Purpose ID"
+    _required = true
+    allowLookupRecordDeletion = true
+    referenceTo = [
+        "DataUsePurpose",
+    ]
+  }
+}

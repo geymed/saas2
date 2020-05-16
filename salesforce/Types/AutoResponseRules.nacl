@@ -1,0 +1,13 @@
+type salesforce.AutoResponseRules {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  salesforce.AutoResponseRule autoResponseRule {
+    _required = false
+  }
+  serviceid fullName {
+    _required = false
+  }
+  metadataType = "AutoResponseRules"
+}

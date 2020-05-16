@@ -1,0 +1,12 @@
+settings salesforce.TrailheadSettings {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  serviceid fullName {
+    _required = false
+  }
+  boolean enableMyTrailheadPref {
+  }
+  metadataType = "TrailheadSettings"
+}

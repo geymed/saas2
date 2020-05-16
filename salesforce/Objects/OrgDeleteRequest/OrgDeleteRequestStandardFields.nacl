@@ -1,0 +1,83 @@
+type salesforce.OrgDeleteRequest {
+  salesforce.Text Id {
+    apiName = "OrgDeleteRequest.Id"
+    label = "Org Delete Request ID"
+    _required = true
+    unique = false
+    caseSensitive = false
+    length = 18
+  }
+  salesforce.Lookup OwnerId {
+    apiName = "OrgDeleteRequest.OwnerId"
+    label = "Owner ID"
+    _required = true
+    allowLookupRecordDeletion = true
+    referenceTo = [
+        "Group",
+        "User",
+    ]
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "OrgDeleteRequest.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+  }
+  salesforce.Name Name {
+    apiName = "OrgDeleteRequest.Name"
+    label = "Name"
+    _required = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "OrgDeleteRequest.CreatedDate"
+    label = "Created Date"
+    _required = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "OrgDeleteRequest.CreatedById"
+    label = "Created By ID"
+    _required = true
+    allowLookupRecordDeletion = true
+    referenceTo = [
+        "User",
+    ]
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "OrgDeleteRequest.LastModifiedDate"
+    label = "Last Modified Date"
+    _required = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "OrgDeleteRequest.LastModifiedById"
+    label = "Last Modified By ID"
+    _required = true
+    allowLookupRecordDeletion = true
+    referenceTo = [
+        "User",
+    ]
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "OrgDeleteRequest.SystemModstamp"
+    label = "System Modstamp"
+    _required = true
+  }
+  salesforce.Picklist RequestType {
+    apiName = "OrgDeleteRequest.RequestType"
+    label = "Request Type"
+    _required = true
+    valueSet = [
+        {
+          fullName = "Deactivate"
+          default = false
+          label = "Deactivate"
+          isActive = true
+        },
+        {
+          fullName = "Reactivate"
+          default = false
+          label = "Reactivate"
+          isActive = true
+        },
+    ]
+    restricted = true
+  }
+}

@@ -1,0 +1,256 @@
+type salesforce.CampaignMember {
+  salesforce.Text Id {
+    apiName = "CampaignMember.Id"
+    label = "Campaign Member ID"
+    _required = true
+    unique = false
+    caseSensitive = false
+    length = 18
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "CampaignMember.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+  }
+  salesforce.Lookup CampaignId {
+    apiName = "CampaignMember.CampaignId"
+    label = "Campaign ID"
+    _required = true
+    allowLookupRecordDeletion = true
+    referenceTo = [
+        "Campaign",
+    ]
+  }
+  salesforce.Lookup LeadId {
+    apiName = "CampaignMember.LeadId"
+    label = "Lead ID"
+    _required = false
+    allowLookupRecordDeletion = true
+    referenceTo = [
+        "Lead",
+    ]
+  }
+  salesforce.Lookup ContactId {
+    apiName = "CampaignMember.ContactId"
+    label = "Contact ID"
+    _required = false
+    allowLookupRecordDeletion = true
+    referenceTo = [
+        "Contact",
+    ]
+  }
+  salesforce.Picklist Status {
+    apiName = "CampaignMember.Status"
+    label = "Status"
+    _required = false
+    restricted = false
+    valueSetName = salesforce.StandardValueSet.instance.CampaignMemberStatus
+  }
+  salesforce.Checkbox HasResponded {
+    apiName = "CampaignMember.HasResponded"
+    label = "Responded"
+    defaultValue = false
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "CampaignMember.CreatedDate"
+    label = "Created Date"
+    _required = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "CampaignMember.CreatedById"
+    label = "Created By ID"
+    _required = true
+    allowLookupRecordDeletion = true
+    referenceTo = [
+        "User",
+    ]
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "CampaignMember.LastModifiedDate"
+    label = "Last Modified Date"
+    _required = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "CampaignMember.LastModifiedById"
+    label = "Last Modified By ID"
+    _required = true
+    allowLookupRecordDeletion = true
+    referenceTo = [
+        "User",
+    ]
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "CampaignMember.SystemModstamp"
+    label = "System Modstamp"
+    _required = true
+  }
+  salesforce.Date FirstRespondedDate {
+    apiName = "CampaignMember.FirstRespondedDate"
+    label = "First Responded Date"
+    _required = false
+  }
+  salesforce.Picklist Salutation {
+    apiName = "CampaignMember.Salutation"
+    label = "Salutation"
+    _required = false
+    restricted = false
+    valueSetName = salesforce.StandardValueSet.instance.Salutation
+  }
+  salesforce.Text Name {
+    apiName = "CampaignMember.Name"
+    label = "Name"
+    _required = false
+    unique = false
+    caseSensitive = false
+    length = 255
+  }
+  salesforce.Text FirstName {
+    apiName = "CampaignMember.FirstName"
+    label = "First Name"
+    _required = false
+    unique = false
+    caseSensitive = false
+    length = 40
+  }
+  salesforce.Text LastName {
+    apiName = "CampaignMember.LastName"
+    label = "Last Name"
+    _required = false
+    unique = false
+    caseSensitive = false
+    length = 80
+  }
+  salesforce.Text Title {
+    apiName = "CampaignMember.Title"
+    label = "Title"
+    _required = false
+    unique = false
+    caseSensitive = false
+    length = 128
+  }
+  salesforce.Text Street {
+    apiName = "CampaignMember.Street"
+    label = "Street"
+    _required = false
+    unique = false
+    caseSensitive = false
+    length = 255
+  }
+  salesforce.Text City {
+    apiName = "CampaignMember.City"
+    label = "City"
+    _required = false
+    unique = false
+    caseSensitive = false
+    length = 40
+  }
+  salesforce.Text State {
+    apiName = "CampaignMember.State"
+    label = "State/Province"
+    _required = false
+    unique = false
+    caseSensitive = false
+    length = 80
+  }
+  salesforce.Text PostalCode {
+    apiName = "CampaignMember.PostalCode"
+    label = "Zip/Postal Code"
+    _required = false
+    unique = false
+    caseSensitive = false
+    length = 20
+  }
+  salesforce.Text Country {
+    apiName = "CampaignMember.Country"
+    label = "Country"
+    _required = false
+    unique = false
+    caseSensitive = false
+    length = 80
+  }
+  salesforce.Email Email {
+    apiName = "CampaignMember.Email"
+    label = "Email"
+    _required = false
+    unique = false
+  }
+  salesforce.Phone Phone {
+    apiName = "CampaignMember.Phone"
+    label = "Phone"
+    _required = false
+  }
+  salesforce.Phone Fax {
+    apiName = "CampaignMember.Fax"
+    label = "Fax"
+    _required = false
+  }
+  salesforce.Phone MobilePhone {
+    apiName = "CampaignMember.MobilePhone"
+    label = "Mobile"
+    _required = false
+  }
+  salesforce.LongTextArea Description {
+    apiName = "CampaignMember.Description"
+    label = "Description"
+    _required = false
+    length = 32000
+  }
+  salesforce.Checkbox DoNotCall {
+    apiName = "CampaignMember.DoNotCall"
+    label = "Do Not Call"
+    defaultValue = false
+  }
+  salesforce.Checkbox HasOptedOutOfEmail {
+    apiName = "CampaignMember.HasOptedOutOfEmail"
+    label = "Email Opt Out"
+    defaultValue = false
+  }
+  salesforce.Checkbox HasOptedOutOfFax {
+    apiName = "CampaignMember.HasOptedOutOfFax"
+    label = "Fax Opt Out"
+    defaultValue = false
+  }
+  salesforce.Picklist LeadSource {
+    apiName = "CampaignMember.LeadSource"
+    label = "Lead Source"
+    _required = false
+    restricted = false
+    valueSetName = salesforce.StandardValueSet.instance.LeadSource
+  }
+  salesforce.Text CompanyOrAccount {
+    apiName = "CampaignMember.CompanyOrAccount"
+    label = "Company (Account)"
+    _required = false
+    unique = false
+    caseSensitive = false
+    length = 255
+  }
+  salesforce.Text Type {
+    apiName = "CampaignMember.Type"
+    label = "Type"
+    _required = false
+    unique = false
+    caseSensitive = false
+    length = 40
+  }
+  salesforce.Lookup LeadOrContactId {
+    apiName = "CampaignMember.LeadOrContactId"
+    label = "Lead/Contact ID"
+    _required = false
+    allowLookupRecordDeletion = true
+    referenceTo = [
+        "Contact",
+        "Lead",
+    ]
+  }
+  salesforce.Lookup LeadOrContactOwnerId {
+    apiName = "CampaignMember.LeadOrContactOwnerId"
+    label = "Lead/Contact Owner ID"
+    _required = false
+    allowLookupRecordDeletion = true
+    referenceTo = [
+        "Group",
+        "User",
+    ]
+  }
+}

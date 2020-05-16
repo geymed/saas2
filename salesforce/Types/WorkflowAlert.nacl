@@ -1,0 +1,39 @@
+type salesforce.WorkflowAlert {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  "List<string>" ccEmails {
+    _required = false
+  }
+  string description {
+    _required = false
+  }
+  serviceid fullName {
+    _required = false
+  }
+  boolean protected {
+    _required = false
+  }
+  "List<salesforce.WorkflowEmailRecipient>" recipients {
+    _required = false
+  }
+  string senderAddress {
+    _required = false
+  }
+  string senderType {
+    _required = false
+    _restriction = {
+        enforce_value = false
+        values = [
+            "CurrentUser",
+            "DefaultWorkflowUser",
+            "OrgWideEmailAddress",
+        ]
+    }
+  }
+  string template {
+    _required = false
+  }
+  metadataType = "WorkflowAlert"
+}

@@ -1,0 +1,38 @@
+settings salesforce.ApexSettings {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  serviceid fullName {
+    _required = false
+  }
+  boolean enableAggregateCodeCoverageOnly {
+  }
+  boolean enableApexAccessRightsPref {
+  }
+  boolean enableApexApprovalLockUnlock {
+  }
+  boolean enableApexCtrlImplicitWithSharingPref {
+  }
+  boolean enableApexPropertyGetterPref {
+  }
+  boolean enableAuraApexCtrlAuthUserAccessCheckPref {
+  }
+  boolean enableAuraApexCtrlGuestUserAccessCheckPref {
+  }
+  boolean enableCompileOnDeploy {
+  }
+  boolean enableDisableParallelApexTesting {
+  }
+  boolean enableDoNotEmailDebugLog {
+  }
+  boolean enableGaplessTestAutoNum {
+  }
+  boolean enableMngdCtrlActionAccessPref {
+  }
+  boolean enableNonCertifiedApexMdCrud {
+  }
+  boolean enableSecureNoArgConstructorPref {
+  }
+  metadataType = "ApexSettings"
+}

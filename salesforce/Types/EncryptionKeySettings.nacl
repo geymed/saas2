@@ -1,0 +1,16 @@
+settings salesforce.EncryptionKeySettings {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  serviceid fullName {
+    _required = false
+  }
+  boolean enableCacheOnlyKeys {
+  }
+  boolean canOptOutOfDerivationWithBYOK {
+  }
+  boolean enableReplayDetection {
+  }
+  metadataType = "EncryptionKeySettings"
+}

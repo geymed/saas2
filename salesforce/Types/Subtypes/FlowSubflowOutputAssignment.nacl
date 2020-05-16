@@ -1,0 +1,16 @@
+type salesforce.FlowSubflowOutputAssignment {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  salesforce.FlowMetadataValue processMetadataValues {
+    _required = false
+  }
+  string assignToReference {
+    _required = false
+  }
+  string name {
+    _required = false
+  }
+  metadataType = "FlowSubflowOutputAssignment"
+}

@@ -1,0 +1,65 @@
+type salesforce.LightningPageRegion {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  string appendable {
+    _required = false
+    _restriction = {
+        enforce_value = false
+        values = [
+            "disabled",
+            "enabled",
+        ]
+    }
+  }
+  "List<salesforce.ComponentInstance>" componentInstances {
+    _required = false
+  }
+  string mode {
+    _required = false
+    _restriction = {
+        enforce_value = false
+        values = [
+            "Append",
+            "Prepend",
+            "Replace",
+        ]
+    }
+  }
+  string name {
+    _required = false
+  }
+  string prependable {
+    _required = false
+    _restriction = {
+        enforce_value = false
+        values = [
+            "disabled",
+            "enabled",
+        ]
+    }
+  }
+  string replaceable {
+    _required = false
+    _restriction = {
+        enforce_value = false
+        values = [
+            "disabled",
+            "enabled",
+        ]
+    }
+  }
+  string type {
+    _required = false
+    _restriction = {
+        enforce_value = false
+        values = [
+            "Background",
+            "Facet",
+            "Region",
+        ]
+    }
+  }
+  metadataType = "FlexiPageRegion"
+}

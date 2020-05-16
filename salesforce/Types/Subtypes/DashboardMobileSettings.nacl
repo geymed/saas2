@@ -1,0 +1,10 @@
+type salesforce.DashboardMobileSettings {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  boolean enableDashboardIPadApp {
+    _required = false
+  }
+  metadataType = "DashboardMobileSettings"
+}

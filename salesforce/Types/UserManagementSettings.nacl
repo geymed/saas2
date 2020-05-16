@@ -1,0 +1,22 @@
+settings salesforce.UserManagementSettings {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  serviceid fullName {
+    _required = false
+  }
+  boolean enableContactlessExternalIdentityUsers {
+  }
+  boolean enableEnhancedPermsetMgmt {
+  }
+  boolean enableEnhancedProfileMgmt {
+  }
+  boolean enableNewProfileUI {
+  }
+  boolean enableUserSelfDeactivate {
+  }
+  boolean enableScrambleUserData {
+  }
+  metadataType = "UserManagementSettings"
+}

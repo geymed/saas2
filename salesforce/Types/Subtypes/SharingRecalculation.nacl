@@ -1,0 +1,10 @@
+type salesforce.SharingRecalculation {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  string className {
+    _required = false
+  }
+  metadataType = "SharingRecalculation"
+}

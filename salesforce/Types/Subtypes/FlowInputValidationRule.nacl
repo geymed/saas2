@@ -1,0 +1,13 @@
+type salesforce.FlowInputValidationRule {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  string errorMessage {
+    _required = false
+  }
+  string formulaExpression {
+    _required = false
+  }
+  metadataType = "FlowInputValidationRule"
+}

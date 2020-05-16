@@ -1,0 +1,10 @@
+type salesforce.DuplicateRuleFilter {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  string booleanFilter {
+    _required = false
+  }
+  metadataType = "DuplicateRuleFilter"
+}

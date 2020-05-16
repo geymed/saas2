@@ -1,0 +1,43 @@
+type salesforce.FlowLoop {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  salesforce.FlowMetadataValue processMetadataValues {
+    _required = false
+  }
+  string description {
+    _required = false
+  }
+  string name {
+    _required = false
+  }
+  string label {
+    _required = false
+  }
+  number locationX {
+    _required = false
+  }
+  number locationY {
+    _required = false
+  }
+  string assignNextValueToReference {
+    _required = false
+  }
+  string collectionReference {
+    _required = false
+  }
+  salesforce.FlowConnector nextValueConnector {
+    _required = false
+  }
+  salesforce.FlowConnector noMoreValuesConnector {
+    _required = false
+  }
+  string iterationOrder {
+    _values = [
+        "Asc",
+        "Desc",
+    ]
+  }
+  metadataType = "FlowLoop"
+}

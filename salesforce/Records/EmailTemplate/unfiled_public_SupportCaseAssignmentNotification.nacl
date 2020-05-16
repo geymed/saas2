@@ -1,0 +1,19 @@
+salesforce.EmailTemplate unfiled_public_SupportCaseAssignmentNotification {
+  available = true
+  description = "Notification to rep when case is auto-assigned"
+  encodingKey = "UTF-8"
+  name = "Support: Case Assignment Notification"
+  style = "none"
+  subject = "Case {!Case.CaseNumber}:&quot;{!Case.Subject}&quot; auto-assigned to you"
+  type = "text"
+  uiType = "Aloha"
+  fullName = "unfiled$public/SupportCaseAssignmentNotification"
+  content = '''
+The following case has been auto-assigned to your team.  The case needs to be resolved within our standard service levels.
+
+Company: {!Account.Name}
+Contact: {!Contact.Name}
+Subject: {!Case.Subject}
+Description: {!Case.Description}
+'''
+}

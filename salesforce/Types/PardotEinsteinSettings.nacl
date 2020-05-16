@@ -1,0 +1,14 @@
+settings salesforce.PardotEinsteinSettings {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  serviceid fullName {
+    _required = false
+  }
+  boolean enableCampaignInsight {
+  }
+  boolean enableEngagementScore {
+  }
+  metadataType = "PardotEinsteinSettings"
+}

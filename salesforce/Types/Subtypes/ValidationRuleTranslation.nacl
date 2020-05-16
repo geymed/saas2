@@ -1,0 +1,13 @@
+type salesforce.ValidationRuleTranslation {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  string errorMessage {
+    _required = false
+  }
+  string name {
+    _required = false
+  }
+  metadataType = "ValidationRuleTranslation"
+}

@@ -1,0 +1,28 @@
+type salesforce.HomePageComponent {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  string body {
+    _required = false
+  }
+  serviceid fullName {
+    _required = false
+  }
+  number height {
+    _required = false
+  }
+  "List<string>" links {
+    _required = false
+  }
+  string page {
+    _required = false
+  }
+  boolean showLabel {
+    _required = false
+  }
+  boolean showScrollbars {
+    _required = false
+  }
+  metadataType = "HomePageComponent"
+}

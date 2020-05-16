@@ -1,0 +1,10 @@
+type salesforce.ObjectUsage {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  string object {
+    _required = false
+  }
+  metadataType = "ObjectUsage"
+}

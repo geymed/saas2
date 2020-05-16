@@ -1,0 +1,17 @@
+settings salesforce.PathAssistantSettings {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  serviceid fullName {
+    _required = false
+  }
+  boolean pathAssistantEnabled {
+    _required = false
+  }
+  boolean canOverrideAutoPathCollapseWithUserPref {
+  }
+  boolean pathAssistantForOpportunityEnabled {
+  }
+  metadataType = "PathAssistantSettings"
+}

@@ -1,0 +1,16 @@
+type salesforce.ObjectMapping {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  string inputObject {
+    _required = false
+  }
+  "List<salesforce.ObjectMappingField>" mappingFields {
+    _required = false
+  }
+  string outputObject {
+    _required = false
+  }
+  metadataType = "ObjectMapping"
+}

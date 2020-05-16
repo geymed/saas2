@@ -1,0 +1,13 @@
+type salesforce.LayoutColumn {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  "List<salesforce.LayoutItem>" layoutItems {
+    _required = false
+  }
+  string reserved {
+    _required = false
+  }
+  metadataType = "LayoutColumn"
+}

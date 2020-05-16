@@ -1,0 +1,16 @@
+type salesforce.UiFormulaCriterion {
+  annotations {
+    serviceid metadataType {
+    }
+  }
+  string leftValue {
+    _required = false
+  }
+  string operator {
+    _required = false
+  }
+  string rightValue {
+    _required = false
+  }
+  metadataType = "UiFormulaCriterion"
+}

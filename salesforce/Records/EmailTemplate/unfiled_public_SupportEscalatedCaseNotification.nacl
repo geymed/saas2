@@ -1,0 +1,20 @@
+salesforce.EmailTemplate unfiled_public_SupportEscalatedCaseNotification {
+  available = true
+  description = "Notification email on case escalation"
+  encodingKey = "UTF-8"
+  name = "Support: Escalated Case Notification"
+  style = "none"
+  subject = "ESCALATED CASE {!Case.CaseNumber}"
+  type = "text"
+  uiType = "Aloha"
+  fullName = "unfiled$public/SupportEscalatedCaseNotification"
+  content = '''
+The following case has been escalated to the Escalated Queue. 
+
+Company: {!Account.Name} 
+Service Level: {!Account_Service_Level} 
+Product: {!Case.Product__c} 
+Case #: {!Case.CaseNumber} 
+Case Subject: {!Case.Subject}
+'''
+}

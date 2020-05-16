@@ -1,0 +1,20 @@
+salesforce.EmailTemplate unfiled_public_SupportEscalatedCaseReassignment {
+  available = true
+  description = "Case reassignment email to new case owner on escalation"
+  encodingKey = "UTF-8"
+  name = "Support: Escalated Case Reassignment"
+  style = "none"
+  subject = "ESCALATED CASE {!Case.CaseNumber}"
+  type = "text"
+  uiType = "Aloha"
+  fullName = "unfiled$public/SupportEscalatedCaseReassignment"
+  content = '''
+The following case has been escalated to you since it is nearing its SLA time limit and is still open.
+
+Company: {!Account.Name}
+Service Level: {!Account_Service_Level}
+Product: {!Case.Product__c}
+Case #: {!Case.CaseNumber}
+Case Subject: {!Case.Subject}
+'''
+}

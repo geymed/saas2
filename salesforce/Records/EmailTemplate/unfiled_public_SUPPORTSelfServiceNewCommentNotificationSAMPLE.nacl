@@ -1,0 +1,18 @@
+salesforce.EmailTemplate unfiled_public_SUPPORTSelfServiceNewCommentNotificationSAMPLE {
+  available = true
+  description = "Sample email template that can be sent to your Self-Service customers to notify them a public comment has been added to their case."
+  encodingKey = "ISO-8859-1"
+  name = "SUPPORT:  Self-Service New Comment Notification (SAMPLE)"
+  style = "none"
+  subject = "Your case {!Case.CaseNumber} has been updated"
+  type = "text"
+  uiType = "Aloha"
+  fullName = "unfiled$public/SUPPORTSelfServiceNewCommentNotificationSAMPLE"
+  content = '''
+Your case # {!Case.CaseNumber}: {!Case.Subject} has been updated.  Please click on the link below
+to view this case on the Self-Service portal.
+<insert the link to your Self-Service portal login page here>
+
+{!Organization.Name} Customer Support
+'''
+}
